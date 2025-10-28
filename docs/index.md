@@ -1,19 +1,10 @@
 # VerificaAAA
 
-<div align="center">
-<img src="docs/imagens/logo-verificaaa.png" alt="Logo de prancheta com checklist" style="width: 100px">
-</div>
+## Descrição
 
+O VerificaAAA é um projeto criado a partir do curso de Interação Humano Computador, ministrado pela docente Rejane Maria da Costa Figueiredo, na Universidade de Brasília (UnB). Nesse sentido, seu objetivo final é fornecer um checklist prático de acessibilidade para projetos, principalmente de desenvolvimento, que incluem: desenvolvimento web, design, geração de conteúdo e gestão de projetos.
 
-## Introdução
-
-Este repositório tem como propósito fornecer um checklist prático de acessibilidade para projetos, principalmente de desenvolvimento de software, que incluem: desenvolvimento web, design, geração de conteúdo e gestão de projetos. 
-
-## VerificaAAA
-
-O VerificaAAA é nome do projeto criado a partir do curso de Interação Humano Computador, ministrado pela docente Rejane Maria da Costa Figueiredo, na Universidade de Brasília (UnB). 
-
-## Contribuidores
+## Equipe
 
 <table>
   <tr>
@@ -24,3 +15,7 @@ O VerificaAAA é nome do projeto criado a partir do curso de Interação Humano 
     <td align="center"><a href="https://github.com/maykonjuso "><img style="border-radius: 50%;" src="https://github.com/maykonjuso.png" width="100px;" alt=""/><br /><sub><b>Maykon Júnio</b></sub></a><br />
   </tr>
 </table>
+
+## Licença
+
+Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE.md](https://github.com/vitorfleonardo/VerificaAAA/tree/main?tab=License-1-ov-file) para detalhes.
