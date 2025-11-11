@@ -4,4 +4,9 @@ theme:
 
 nav:
   - Home: index.md
-  - teste: teste.md
+  - Design: design.md
+  - Desenvolvimento Web: devweb.md
+  - Conteúdo: conteudo.md
+  - Gestão de Projetos: gestaodeprojetos.md
+  - Heurísticas de Nielsen: heuristicas.md
+  - Ferramentas: ferramentas.md
