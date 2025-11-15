@@ -1,12 +1,29 @@
 site_name: My Docs
 theme:
   name: material
+  palette:
+    primary: 'green'
+    accent: 'orange'
 
 nav:
   - Home: index.md
+  - Progresso Geral: progresso.md
   - Design: design.md
   - Desenvolvimento Web: devweb.md
   - Conteúdo: conteudo.md
   - Gestão de Projetos: gestaodeprojetos.md
   - Heurísticas de Nielsen: heuristicas.md
   - Ferramentas: ferramentas.md
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js
+  - js/main.js
+  - js/summary.js
+
+extra_css:
+  - css/extra.css
+
+markdown_extensions:
+  - pymdownx.tasklist:
+      clickable_checkbox: true
+  - footnotes
