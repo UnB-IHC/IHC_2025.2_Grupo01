@@ -1,4 +1,6 @@
 site_name: Guia de Acessibilidade Digital
+repo_url: https://github.com/UnB-IHC/IHC_2025.2_Grupo01/
+repo_name: IHC_2025.2_Grupo01
 theme:
   name: material
   palette:
