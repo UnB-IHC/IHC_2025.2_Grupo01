@@ -1,4 +1,4 @@
-site_name: My Docs
+site_name: Guia de Acessibilidade Digital
 theme:
   name: material
   palette:
@@ -6,8 +6,8 @@ theme:
     accent: 'orange'
 
 nav:
-  - Home: index.md
-  - Progresso Geral: progresso.md
+  - Introdução: index.md
+  - Visão Geral: progresso.md
   - Design: design.md
   - Desenvolvimento Web: devweb.md
   - Conteúdo: conteudo.md
