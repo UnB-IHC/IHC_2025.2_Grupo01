@@ -1,9 +1,19 @@
-const siteChecklists = [
-    { path: "/IHC_2025.2_Grupo01/design/", fetchPath: "../design/" },
-    { path: "/IHC_2025.2_Grupo01/devweb/", fetchPath: "../devweb/" },
-    { path: "/IHC_2025.2_Grupo01/conteudo/", fetchPath: "../conteudo/" },
-    { path: "/IHC_2025.2_Grupo01/gestaodeprojetos/", fetchPath: "../gestaodeprojetos/" }
+const checklistsBase = [
+    { page: "design", file: "design.md" },
+    { page: "devweb", file: "devweb.md" },
+    { page: "conteudo", file: "conteudo.md" },
+    { page: "gestaodeprojetos", file: "gestaodeprojetos.md" }
 ];
+
+const isLocal = window.location.hostname === '127.0.0.1' || window.location.hostname === 'localhost';
+const repoPath = isLocal ? '' : '/IHC_2025.2_Grupo01';
+
+const siteChecklists = checklistsBase.map(item => {
+    return {
+        path: `${repoPath}/${item.page}/`,
+        fetchPath: `../${item.page}/`
+    };
+});
 
 const corNA = '#9E9E9E'
 
