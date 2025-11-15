@@ -1,8 +1,8 @@
 const siteChecklists = [
-    { path: "/design/" },
-    { path: "/devweb/" },
-    { path: "/conteudo/" },
-    { path: "/gestaodeprojetos/" }
+    { path: "/IHC_2025.2_Grupo01/design/", fetchPath: "../design/" },
+    { path: "/IHC_2025.2_Grupo01/devweb/", fetchPath: "../devweb/" },
+    { path: "/IHC_2025.2_Grupo01/conteudo/", fetchPath: "../conteudo/" },
+    { path: "/IHC_2025.2_Grupo01/gestaodeprojetos/", fetchPath: "../gestaodeprojetos/" }
 ];
 
 const corNA = '#9E9E9E'
@@ -40,10 +40,10 @@ async function processChecklists(doughnutContainer, barContainer) {
 
     try {
         const fetchPromises = siteChecklists.map(page => 
-            fetch(page.path)
+            fetch(page.fetchPath)
                 .then(response => {
                     if (!response.ok) {
-                        throw new Error(`Não foi possível encontrar a página: ${page.file}`);
+                        throw new Error(`Não foi possível encontrar a página: ${page.fetchPath}`);
                     }
                     return response.text();
                 })
