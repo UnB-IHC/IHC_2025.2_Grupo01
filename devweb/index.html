@@ -1,0 +1,1203 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../design/">
+      
+      
+        <link rel="next" href="../conteudo/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Desenvolvimento Web - My Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#desenvolvimento-web" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="My Docs" class="md-header__button md-logo" aria-label="My Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            My Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Desenvolvimento Web
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    My Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../progresso/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Progresso Geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Design
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Desenvolvimento Web
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Desenvolvimento Web
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#imagens" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Imagens
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#videos-e-midia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vídeos e Mídia
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#navegacao-e-controles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Navegação e Controles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formularios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Formulários
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estrutura-e-semantica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estrutura e Semântica
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modais-e-dialogos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modais e Diálogos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dispositivos-moveis-e-toque" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dispositivos Móveis e Toque
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#teclado-e-interacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Teclado e Interação
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#imagens_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Imagens
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#videos-e-midia_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vídeos e Mídia
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#navegacao-e-controles_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Navegação e Controles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formularios_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Formulários
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estrutura-e-semantica_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estrutura e Semântica
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modais-e-dialogos_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modais e Diálogos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dispositivos-moveis-e-toque_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dispositivos Móveis e Toque
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#teclado-e-interacao_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Teclado e Interação
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testes-e-validacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Testes e Validação
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Referências
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../conteudo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Conteúdo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gestaodeprojetos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gestão de Projetos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../heuristicas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Heurísticas de Nielsen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ferramentas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ferramentas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#imagens" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Imagens
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#videos-e-midia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vídeos e Mídia
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#navegacao-e-controles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Navegação e Controles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formularios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Formulários
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estrutura-e-semantica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estrutura e Semântica
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modais-e-dialogos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modais e Diálogos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dispositivos-moveis-e-toque" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dispositivos Móveis e Toque
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#teclado-e-interacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Teclado e Interação
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#imagens_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Imagens
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#videos-e-midia_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vídeos e Mídia
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#navegacao-e-controles_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Navegação e Controles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formularios_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Formulários
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estrutura-e-semantica_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estrutura e Semântica
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modais-e-dialogos_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modais e Diálogos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dispositivos-moveis-e-toque_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dispositivos Móveis e Toque
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#teclado-e-interacao_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Teclado e Interação
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testes-e-validacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Testes e Validação
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Referências
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="desenvolvimento-web">Desenvolvimento Web</h1>
+<div class="chart-container" style="position: relative; height:250px; width:250px; margin: 20px auto;">
+    <canvas class="checklist-pie-chart"></canvas>
+</div>
+
+<h2 id="imagens">Imagens</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Imagens informativas: devem ter alt com descrição breve e significativa do conteúdo. WCAG 1.1.1 <sup id="fnref:wcag111"><a class="footnote-ref" href="#fn:wcag111">3</a></sup>; NBR <sup id="fnref:abnt17225"><a class="footnote-ref" href="#fn:abnt17225">1</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Imagens decorativas: devem ser ignoradas por leitores de tela, utilizando <code>alt=""</code> (vazio) ou <code>role="presentation"</code>. WCAG 1.1.1 <sup id="fnref2:wcag111"><a class="footnote-ref" href="#fn:wcag111">3</a></sup>; NBR <sup id="fnref2:abnt17225"><a class="footnote-ref" href="#fn:abnt17225">1</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Imagens com legenda ou título: deve ter legenda ou título associado à imagem com texto claro e descritivo. WCAG 2.4.6 <sup id="fnref:wcag246"><a class="footnote-ref" href="#fn:wcag246">20</a></sup>; NBR <sup id="fnref3:abnt17225"><a class="footnote-ref" href="#fn:abnt17225">1</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Imagens em botões ou links o alt deve descrever a ação (ex: <code>alt="Pesquisar"</code>). WCAG 1.1.1 <sup id="fnref3:wcag111"><a class="footnote-ref" href="#fn:wcag111">3</a></sup>; NBR <sup id="fnref4:abnt17225"><a class="footnote-ref" href="#fn:abnt17225">1</a></sup>;</li>
+</ul>
+<h2 id="videos-e-midia">Vídeos e Mídia</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Legenda sincronizada: todo vídeo com áudio deve possuir legendas. WCAG 1.2.2 <sup id="fnref:wcag122"><a class="footnote-ref" href="#fn:wcag122">5</a></sup>; NBR <sup id="fnref5:abnt17225"><a class="footnote-ref" href="#fn:abnt17225">1</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Transcrição textual: conteúdos em áudio devem ter transcrição equivalente. WCAG 1.2.1 <sup id="fnref:wcag121"><a class="footnote-ref" href="#fn:wcag121">4</a></sup>; NBR <sup id="fnref6:abnt17225"><a class="footnote-ref" href="#fn:abnt17225">1</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Audiodescrição: obrigatória quando informações visuais forem essenciais à compreensão. WCAG 1.2.5 <sup id="fnref:wcag125"><a class="footnote-ref" href="#fn:wcag125">6</a></sup>; NBR <sup id="fnref7:abnt17225"><a class="footnote-ref" href="#fn:abnt17225">1</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Controle de reprodução: não utilize autoplay, ofereça pausa, stop e volume ajustável. WCAG 1.4.2 <sup id="fnref:wcag142"><a class="footnote-ref" href="#fn:wcag142">11</a></sup>, 2.2.2 <sup id="fnref:wcag222"><a class="footnote-ref" href="#fn:wcag222">17</a></sup>; NBR <sup id="fnref8:abnt17225"><a class="footnote-ref" href="#fn:abnt17225">1</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Acessibilidade no player: garanta que todos os botões do player sejam acessíveis por teclado e tenham rótulos (<code>aria-label</code>). WCAG 2.1.1 <sup id="fnref:wcag211"><a class="footnote-ref" href="#fn:wcag211">14</a></sup>; Guia UK/BR <sup id="fnref:guiaukbr"><a class="footnote-ref" href="#fn:guiaukbr">2</a></sup>;</li>
+</ul>
+<h2 id="navegacao-e-controles">Navegação e Controles</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Links e botões semânticos: links devem ter <code>href</code> válido e botões devem usar <code>&lt;button&gt;</code> com ação clara. WCAG 1.3.1 <sup id="fnref:wcag131"><a class="footnote-ref" href="#fn:wcag131">7</a></sup>, 4.1.2 <sup id="fnref:wcag412"><a class="footnote-ref" href="#fn:wcag412">32</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Atalho “Pular para o conteúdo”: inclua link no topo da página para ir direto à área principal. WCAG 2.4.1 <sup id="fnref:wcag241"><a class="footnote-ref" href="#fn:wcag241">18</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Aviso de nova aba ou janela: informe quando o clique abrir novo contexto. WCAG 3.2.2 <sup id="fnref:wcag322"><a class="footnote-ref" href="#fn:wcag322">25</a></sup>; Guia UK/BR <sup id="fnref2:guiaukbr"><a class="footnote-ref" href="#fn:guiaukbr">2</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Foco e ordem lógica: a navegação via teclado deve seguir ordem coerente. WCAG 2.4.3 <sup id="fnref:wcag243"><a class="footnote-ref" href="#fn:wcag243">19</a></sup>, 2.4.7 <sup id="fnref:wcag247"><a class="footnote-ref" href="#fn:wcag247">21</a></sup>;</li>
+</ul>
+<h2 id="formularios">Formulários</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Mensagens de erro claras: devem aparecer próximas ao campo e indicar como corrigir. WCAG 3.3.1 <sup id="fnref:wcag331"><a class="footnote-ref" href="#fn:wcag331">26</a></sup>, 3.3.3 <sup id="fnref:wcag333"><a class="footnote-ref" href="#fn:wcag333">28</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Autocompletar e dados persistentes: permita o uso de autocomplete e evite preenchimentos repetidos. WCAG 1.3.5 <sup id="fnref:wcag135"><a class="footnote-ref" href="#fn:wcag135">10</a></sup>, 3.3.7 <sup id="fnref:wcag337"><a class="footnote-ref" href="#fn:wcag337">29</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Sumário de validação: exibe lista de erros no topo após o envio. WCAG 3.3.1 <sup id="fnref2:wcag331"><a class="footnote-ref" href="#fn:wcag331">26</a></sup>; Guia UK/BR <sup id="fnref3:guiaukbr"><a class="footnote-ref" href="#fn:guiaukbr">2</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Feedback visual e textual: deve fornecer feedback visual e textual em ações (envio, carregamento, sucesso, erro). NBR <sup id="fnref9:abnt17225"><a class="footnote-ref" href="#fn:abnt17225">1</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Campos obrigatórios: devem ser identificados textual e visualmente (ex: “*Campo obrigatório”). WCAG 3.3.2 <sup id="fnref:wcag332"><a class="footnote-ref" href="#fn:wcag332">27</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Evitar entrada redundante; autenticação acessível. WCAG 3.3.7 <sup id="fnref2:wcag337"><a class="footnote-ref" href="#fn:wcag337">29</a></sup>, 3.3.8 <sup id="fnref:wcag338"><a class="footnote-ref" href="#fn:wcag338">30</a></sup>, 3.3.9 <sup id="fnref:wcag339"><a class="footnote-ref" href="#fn:wcag339">31</a></sup>; NBR <sup id="fnref10:abnt17225"><a class="footnote-ref" href="#fn:abnt17225">1</a></sup>;</li>
+</ul>
+<h2 id="estrutura-e-semantica">Estrutura e Semântica</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Elementos nativos HTML: prefira <code>&lt;button&gt;</code>, <code>&lt;ul&gt;</code>, <code>&lt;table&gt;</code>, <code>&lt;form&gt;</code> em vez de divs genéricas. WCAG 1.3.1 <sup id="fnref2:wcag131"><a class="footnote-ref" href="#fn:wcag131">7</a></sup>, 4.1.2 <sup id="fnref2:wcag412"><a class="footnote-ref" href="#fn:wcag412">32</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Hierarquia de títulos: não pule níveis. (ex: <code>&lt;h1&gt;</code> direto para <code>&lt;h3&gt;</code>). WCAG 1.3.1 <sup id="fnref3:wcag131"><a class="footnote-ref" href="#fn:wcag131">7</a></sup>; NBR 5.3.5 <sup id="fnref11:abnt17225"><a class="footnote-ref" href="#fn:abnt17225">1</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Tabelas acessíveis: inclua <code>&lt;caption&gt;</code> e identifique cabeçalhos com <code>&lt;th scope=“col/row”&gt;</code>. WCAG 1.3.1 <sup id="fnref4:wcag131"><a class="footnote-ref" href="#fn:wcag131">7</a></sup>; NBR 5.6.3, 5.6.5 <sup id="fnref12:abnt17225"><a class="footnote-ref" href="#fn:abnt17225">1</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Ordem do DOM: deve seguir a ordem lógica de leitura e de tabulação, onde a navegação por teclado deve seguir a sequência visual. WCAG 1.3.2 <sup id="fnref:wcag132"><a class="footnote-ref" href="#fn:wcag132">8</a></sup>; NBR 5.13.6, 5.10.2 <sup id="fnref13:abnt17225"><a class="footnote-ref" href="#fn:abnt17225">1</a></sup>;</li>
+</ul>
+<h2 id="modais-e-dialogos">Modais e Diálogos</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Foco no modal: o foco deve ir para o modal ao abrir e voltar ao elemento anterior ao fechar. WCAG 2.4.3 <sup id="fnref2:wcag243"><a class="footnote-ref" href="#fn:wcag243">19</a></sup>, 2.4.7 <sup id="fnref2:wcag247"><a class="footnote-ref" href="#fn:wcag247">21</a></sup>; NBR 5.1.4 <sup id="fnref14:abnt17225"><a class="footnote-ref" href="#fn:abnt17225">1</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Fechamento Acessível (Sem Armadilhas): o usuário deve poder fechar o componente via teclado (tecla <code>Esc</code> ou <code>Tab</code>) e deve existir um botão de fechar visível. O foco não deve ficar preso. WCAG 2.1.2 <sup id="fnref:wcag212"><a class="footnote-ref" href="#fn:wcag212">15</a></sup>; NBR 5.1.6 <sup id="fnref15:abnt17225"><a class="footnote-ref" href="#fn:abnt17225">1</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Evitar sobreposição: não utilize modais dentro de outros modais ou fullscreen forçado. Guia UK/BR <sup id="fnref4:guiaukbr"><a class="footnote-ref" href="#fn:guiaukbr">2</a></sup>;</li>
+</ul>
+<h2 id="dispositivos-moveis-e-toque">Dispositivos Móveis e Toque</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Layout responsivo: deve ajustar-se sem rolagem horizontal e suportar zoom de até 200%. WCAG 1.4.10 <sup id="fnref:wcag1410"><a class="footnote-ref" href="#fn:wcag1410">13</a></sup>, 1.4.4 <sup id="fnref:wcag144"><a class="footnote-ref" href="#fn:wcag144">12</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Áreas de toque adequadas: botões e links devem ter tamanho e espaçamento suficientes para o toque. WCAG 2.5.8 <sup id="fnref:wcag258"><a class="footnote-ref" href="#fn:wcag258">24</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Orientação flexível: o conteúdo deve funcionar tanto em modo retrato quanto em paisagem. WCAG 1.3.4 <sup id="fnref:wcag134"><a class="footnote-ref" href="#fn:wcag134">9</a></sup>; NBR <sup id="fnref16:abnt17225"><a class="footnote-ref" href="#fn:abnt17225">1</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Alternativa ao arrastar; alvo mínimo. WCAG 2.5.7 <sup id="fnref:wcag257"><a class="footnote-ref" href="#fn:wcag257">23</a></sup>, 2.5.8 <sup id="fnref2:wcag258"><a class="footnote-ref" href="#fn:wcag258">24</a></sup>; NBR <sup id="fnref17:abnt17225"><a class="footnote-ref" href="#fn:abnt17225">1</a></sup>;</li>
+</ul>
+<h2 id="teclado-e-interacao">Teclado e Interação</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Acessibilidade total via teclado: todas as funções devem ser operáveis sem mouse. WCAG 2.1.1 <sup id="fnref2:wcag211"><a class="footnote-ref" href="#fn:wcag211">14</a></sup>; NBR 5.1.13 <sup id="fnref18:abnt17225"><a class="footnote-ref" href="#fn:abnt17225">1</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Foco visível: o elemento ativo deve ter destaque claro e visível. WCAG 2.4.7 <sup id="fnref3:wcag247"><a class="footnote-ref" href="#fn:wcag247">21</a></sup>, 2.4.11 <sup id="fnref:wcag2411"><a class="footnote-ref" href="#fn:wcag2411">22</a></sup>; NBR 5.1.1, 5.1.3 <sup id="fnref19:abnt17225"><a class="footnote-ref" href="#fn:abnt17225">1</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Equivalentes ao mouseover: toda interação por mouse deve ter equivalente no teclado. WCAG 2.1.1 <sup id="fnref3:wcag211"><a class="footnote-ref" href="#fn:wcag211">14</a></sup>; NBR 5.1.8, 5.1.9 <sup id="fnref20:abnt17225"><a class="footnote-ref" href="#fn:abnt17225">1</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Atalhos de teclado: fornece atalhos quando apropriado e personalizáveis. WCAG 2.1.4 <sup id="fnref:wcag214"><a class="footnote-ref" href="#fn:wcag214">16</a></sup>; NBR 5.1.11 <sup id="fnref21:abnt17225"><a class="footnote-ref" href="#fn:abnt17225">1</a></sup>; Guia UK/BR <sup id="fnref5:guiaukbr"><a class="footnote-ref" href="#fn:guiaukbr">2</a></sup>;</li>
+</ul>
+<h2 id="imagens_1">Imagens</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Imagens informativas: devem ter alt com descrição breve e significativa do conteúdo. WCAG 1.1.1 <sup id="fnref4:wcag111"><a class="footnote-ref" href="#fn:wcag111">3</a></sup>; NBR <sup id="fnref22:abnt17225"><a class="footnote-ref" href="#fn:abnt17225">1</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Imagens decorativas: devem ser ignoradas por leitores de tela, utilizando <code>alt=""</code> (vazio) ou <code>role="presentation"</code>. WCAG 1.1.1 <sup id="fnref5:wcag111"><a class="footnote-ref" href="#fn:wcag111">3</a></sup>; NBR <sup id="fnref23:abnt17225"><a class="footnote-ref" href="#fn:abnt17225">1</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Imagens com legenda ou título: deve ter legenda ou título associado à imagem com texto claro e descritivo. WCAG 2.4.6 <sup id="fnref2:wcag246"><a class="footnote-ref" href="#fn:wcag246">20</a></sup>; NBR <sup id="fnref24:abnt17225"><a class="footnote-ref" href="#fn:abnt17225">1</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Imagens em botões ou links o alt deve descrever a ação (ex: <code>alt="Pesquisar"</code>). WCAG 1.1.1 <sup id="fnref6:wcag111"><a class="footnote-ref" href="#fn:wcag111">3</a></sup>; NBR <sup id="fnref25:abnt17225"><a class="footnote-ref" href="#fn:abnt17225">1</a></sup>;</li>
+</ul>
+<h2 id="videos-e-midia_1">Vídeos e Mídia</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Legenda sincronizada: todo vídeo com áudio deve possuir legendas. WCAG 1.2.2 <sup id="fnref2:wcag122"><a class="footnote-ref" href="#fn:wcag122">5</a></sup>; NBR <sup id="fnref26:abnt17225"><a class="footnote-ref" href="#fn:abnt17225">1</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Transcrição textual: conteúdos em áudio devem ter transcrição equivalente. WCAG 1.2.1 <sup id="fnref2:wcag121"><a class="footnote-ref" href="#fn:wcag121">4</a></sup>; NBR <sup id="fnref27:abnt17225"><a class="footnote-ref" href="#fn:abnt17225">1</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Audiodescrição: obrigatória quando informações visuais forem essenciais à compreensão. WCAG 1.2.5 <sup id="fnref2:wcag125"><a class="footnote-ref" href="#fn:wcag125">6</a></sup>; NBR <sup id="fnref28:abnt17225"><a class="footnote-ref" href="#fn:abnt17225">1</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Controle de reprodução: não utilize autoplay, ofereça pausa, stop e volume ajustável. WCAG 1.4.2 <sup id="fnref2:wcag142"><a class="footnote-ref" href="#fn:wcag142">11</a></sup>, 2.2.2 <sup id="fnref2:wcag222"><a class="footnote-ref" href="#fn:wcag222">17</a></sup>; NBR <sup id="fnref29:abnt17225"><a class="footnote-ref" href="#fn:abnt17225">1</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Acessibilidade no player: garanta que todos os botões do player sejam acessíveis por teclado e tenham rótulos (<code>aria-label</code>). WCAG 2.1.1 <sup id="fnref4:wcag211"><a class="footnote-ref" href="#fn:wcag211">14</a></sup>;</li>
+</ul>
+<h2 id="navegacao-e-controles_1">Navegação e Controles</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Links e botões semânticos: links devem ter <code>href</code> válido e botões devem usar <code>&lt;button&gt;</code> com ação clara. WCAG 1.3.1 <sup id="fnref5:wcag131"><a class="footnote-ref" href="#fn:wcag131">7</a></sup>, 4.1.2 <sup id="fnref3:wcag412"><a class="footnote-ref" href="#fn:wcag412">32</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Atalho “Pular para o conteúdo”: inclua link no topo da página para ir direto à área principal. WCAG 2.4.1 <sup id="fnref2:wcag241"><a class="footnote-ref" href="#fn:wcag241">18</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Aviso de nova aba ou janela: informe quando o clique abrir novo contexto. WCAG 3.2.2 <sup id="fnref2:wcag322"><a class="footnote-ref" href="#fn:wcag322">25</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Foco e ordem lógica: a navegação via teclado deve seguir ordem coerente. WCAG 2.4.3 <sup id="fnref3:wcag243"><a class="footnote-ref" href="#fn:wcag243">19</a></sup>, 2.4.7 <sup id="fnref4:wcag247"><a class="footnote-ref" href="#fn:wcag247">21</a></sup>;</li>
+</ul>
+<h2 id="formularios_1">Formulários</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Mensagens de erro claras: devem aparecer próximas ao campo e indicar como corrigir. WCAG 3.3.1 <sup id="fnref3:wcag331"><a class="footnote-ref" href="#fn:wcag331">26</a></sup>, 3.3.3 <sup id="fnref2:wcag333"><a class="footnote-ref" href="#fn:wcag333">28</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Autocompletar e dados persistentes: permita o uso de autocomplete e evite preenchimentos repetidos. WCAG 1.3.5 <sup id="fnref2:wcag135"><a class="footnote-ref" href="#fn:wcag135">10</a></sup>, 3.3.7 <sup id="fnref3:wcag337"><a class="footnote-ref" href="#fn:wcag337">29</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Sumário de validação: exibe lista de erros no topo após o envio. WCAG 3.3.1 <sup id="fnref4:wcag331"><a class="footnote-ref" href="#fn:wcag331">26</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Feedback visual e textual: deve fornecer feedback visual e textual em ações (envio, carregamento, sucesso, erro). NBR <sup id="fnref30:abnt17225"><a class="footnote-ref" href="#fn:abnt17225">1</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Campos obrigatórios: devem ser identificados textual e visualmente (ex: “*Campo obrigatório”). WCAG 3.3.2 <sup id="fnref2:wcag332"><a class="footnote-ref" href="#fn:wcag332">27</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Evitar entrada redundante; autenticação acessível. WCAG 3.3.7 <sup id="fnref4:wcag337"><a class="footnote-ref" href="#fn:wcag337">29</a></sup>, 3.3.8 <sup id="fnref2:wcag338"><a class="footnote-ref" href="#fn:wcag338">30</a></sup>, 3.3.9 <sup id="fnref2:wcag339"><a class="footnote-ref" href="#fn:wcag339">31</a></sup>;</li>
+</ul>
+<h2 id="estrutura-e-semantica_1">Estrutura e Semântica</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Elementos nativos HTML: prefira <code>&lt;button&gt;</code>, <code>&lt;ul&gt;</code>, <code>&lt;table&gt;</code>, <code>&lt;form&gt;</code> em vez de divs genéricas. WCAG 1.3.1 <sup id="fnref6:wcag131"><a class="footnote-ref" href="#fn:wcag131">7</a></sup>, 4.1.2 <sup id="fnref4:wcag412"><a class="footnote-ref" href="#fn:wcag412">32</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Hierarquia de títulos: não pule níveis. (ex: <code>&lt;h1&gt;</code> direto para <code>&lt;h3&gt;</code>). WCAG 1.3.1 <sup id="fnref7:wcag131"><a class="footnote-ref" href="#fn:wcag131">7</a></sup>; NBR 5.3.5 <sup id="fnref31:abnt17225"><a class="footnote-ref" href="#fn:abnt17225">1</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Tabelas acessíveis: inclua <code>&lt;caption&gt;</code> e identifique cabeçalhos com <code>&lt;th scope=“col/row”&gt;</code>. WCAG 1.3.1 <sup id="fnref8:wcag131"><a class="footnote-ref" href="#fn:wcag131">7</a></sup>; NBR 5.6.3, 5.6.5 <sup id="fnref32:abnt17225"><a class="footnote-ref" href="#fn:abnt17225">1</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Ordem do DOM: deve seguir a ordem lógica de leitura e de tabulação, onde a navegação por teclado deve seguir a sequência visual. WCAG 1.3.2 <sup id="fnref2:wcag132"><a class="footnote-ref" href="#fn:wcag132">8</a></sup>; NBR 5.13.6, 5.10.2 <sup id="fnref33:abnt17225"><a class="footnote-ref" href="#fn:abnt17225">1</a></sup>;</li>
+</ul>
+<h2 id="modais-e-dialogos_1">Modais e Diálogos</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Foco no modal: o foco deve ir para o modal ao abrir e voltar ao elemento anterior ao fechar. WCAG 2.4.3 <sup id="fnref4:wcag243"><a class="footnote-ref" href="#fn:wcag243">19</a></sup>, 2.4.7 <sup id="fnref5:wcag247"><a class="footnote-ref" href="#fn:wcag247">21</a></sup>; NBR 5.1.4 <sup id="fnref34:abnt17225"><a class="footnote-ref" href="#fn:abnt17225">1</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Fechamento acessível: deve haver botão visível de fechar e suporte à tecla <code>Esc</code>. WCAG 2.1.2 <sup id="fnref2:wcag212"><a class="footnote-ref" href="#fn:wcag212">15</a></sup>; NBR 5.1.6 <sup id="fnref35:abnt17225"><a class="footnote-ref" href="#fn:abnt17225">1</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Evitar sobreposição: não utilize modais dentro de outros modais ou fullscreen forçado.</li>
+</ul>
+<h2 id="dispositivos-moveis-e-toque_1">Dispositivos Móveis e Toque</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Layout responsivo: deve ajustar-se sem rolagem horizontal e suportar zoom de até 200%. WCAG 1.4.10 <sup id="fnref2:wcag1410"><a class="footnote-ref" href="#fn:wcag1410">13</a></sup>, 1.4.4 <sup id="fnref2:wcag144"><a class="footnote-ref" href="#fn:wcag144">12</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Áreas de toque adequadas: botões e links devem ter tamanho e espaçamento suficientes para o toque. WCAG 2.5.8 <sup id="fnref3:wcag258"><a class="footnote-ref" href="#fn:wcag258">24</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Orientação flexível: o conteúdo deve funcionar tanto em modo retrato quanto em paisagem. WCAG 1.3.4 <sup id="fnref2:wcag134"><a class="footnote-ref" href="#fn:wcag134">9</a></sup>; NBR <sup id="fnref36:abnt17225"><a class="footnote-ref" href="#fn:abnt17225">1</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Alternativa ao arrastar; alvo mínimo. WCAG 2.5.7 <sup id="fnref2:wcag257"><a class="footnote-ref" href="#fn:wcag257">23</a></sup>, 2.5.8 <sup id="fnref4:wcag258"><a class="footnote-ref" href="#fn:wcag258">24</a></sup>;</li>
+</ul>
+<h2 id="teclado-e-interacao_1">Teclado e Interação</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Acessibilidade total via teclado: todas as funções devem ser operáveis sem mouse. WCAG 2.1.1 <sup id="fnref5:wcag211"><a class="footnote-ref" href="#fn:wcag211">14</a></sup>; NBR 5.1.13 <sup id="fnref37:abnt17225"><a class="footnote-ref" href="#fn:abnt17225">1</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Foco visível: o elemento ativo deve ter destaque claro e visível. WCAG 2.4.7 <sup id="fnref6:wcag247"><a class="footnote-ref" href="#fn:wcag247">21</a></sup>, 2.4.11 <sup id="fnref2:wcag2411"><a class="footnote-ref" href="#fn:wcag2411">22</a></sup>; NBR 5.1.1, 5.1.3 <sup id="fnref38:abnt17225"><a class="footnote-ref" href="#fn:abnt17225">1</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Equivalentes ao mouseover: toda interação por mouse deve ter equivalente no teclado. WCAG 2.1.1 <sup id="fnref6:wcag211"><a class="footnote-ref" href="#fn:wcag211">14</a></sup>; NBR 5.1.8, 5.1.9 <sup id="fnref39:abnt17225"><a class="footnote-ref" href="#fn:abnt17225">1</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Atalhos de teclado: fornece atalhos quando apropriado e personalizáveis. WCAG 2.1.4 <sup id="fnref2:wcag214"><a class="footnote-ref" href="#fn:wcag214">16</a></sup>; NBR 5.1.11 <sup id="fnref40:abnt17225"><a class="footnote-ref" href="#fn:abnt17225">1</a></sup>;</li>
+</ul>
+<h2 id="testes-e-validacao">Testes e Validação</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Testes automáticos: realizar testes automáticos com ferramentas como WAVE, Lighthouse, axe DevTools. NBR <sup id="fnref41:abnt17225"><a class="footnote-ref" href="#fn:abnt17225">1</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Testes manuais: teste com NVDA, VoiceOver e com usuários reais. NBR <sup id="fnref42:abnt17225"><a class="footnote-ref" href="#fn:abnt17225">1</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Documentação: registrar não conformidades e plano de correção. WCAG 5.1 <sup id="fnref:wcag51"><a class="footnote-ref" href="#fn:wcag51">33</a></sup>;</li>
+<li class="task-list-item"><input type="checkbox"/> Registrar achados, priorizar correções e acompanhar.</li>
+<li class="task-list-item"><input type="checkbox"/> Alvo: conformidade WCAG AA / NBR 17225. WCAG 2.2 (AA) <sup id="fnref:wcag22aa"><a class="footnote-ref" href="#fn:wcag22aa">34</a></sup>; NBR <sup id="fnref43:abnt17225"><a class="footnote-ref" href="#fn:abnt17225">1</a></sup>;</li>
+</ul>
+<h2 id="referencias">Referências</h2>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:abnt17225">
+<p><strong>ABNT NBR 17225:2025.</strong> Acessibilidade em comunicação na Web. Disponível em: <a href="https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf">https://mwpt.com.br/wp-content/uploads/2025/04/ABNT-NBR-17225-Acessibilidade-Digital.pdf</a>. Acesso em: 15 nov 2025.&#160;<a class="footnote-backref" href="#fnref:abnt17225" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:abnt17225" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:abnt17225" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref4:abnt17225" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref5:abnt17225" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref6:abnt17225" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref7:abnt17225" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref8:abnt17225" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref9:abnt17225" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref10:abnt17225" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref11:abnt17225" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref12:abnt17225" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref13:abnt17225" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref14:abnt17225" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref15:abnt17225" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref16:abnt17225" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref17:abnt17225" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref18:abnt17225" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref19:abnt17225" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref20:abnt17225" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref21:abnt17225" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref22:abnt17225" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref23:abnt17225" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref24:abnt17225" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref25:abnt17225" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref26:abnt17225" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref27:abnt17225" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref28:abnt17225" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref29:abnt17225" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref30:abnt17225" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref31:abnt17225" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref32:abnt17225" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref33:abnt17225" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref34:abnt17225" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref35:abnt17225" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref36:abnt17225" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref37:abnt17225" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref38:abnt17225" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref39:abnt17225" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref40:abnt17225" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref41:abnt17225" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref42:abnt17225" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref43:abnt17225" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:guiaukbr">
+<p>DINIZ, V.; FERRAZ, R.; NASCIMENTO, C. M.; CREDIDIO, R. <strong>Guia de Boas Práticas para Acessibilidade Digital</strong>. Programa de Cooperação entre Reino Unido e Brasil em Acesso Digital, 2023. Disponível em: <a href="https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf">https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf</a>. Acesso em: 15 nov 2025.&#160;<a class="footnote-backref" href="#fnref:guiaukbr" title="Jump back to footnote 2 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:guiaukbr" title="Jump back to footnote 2 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:guiaukbr" title="Jump back to footnote 2 in the text">&#8617;</a><a class="footnote-backref" href="#fnref4:guiaukbr" title="Jump back to footnote 2 in the text">&#8617;</a><a class="footnote-backref" href="#fnref5:guiaukbr" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:wcag111">
+<p>WCAG 2.2 Understanding Docs. SC 1.1.1 Non-text Content (Level A). Disponível em: <a href="https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html">https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html</a>. Acesso em: 15 nov 2025.&#160;<a class="footnote-backref" href="#fnref:wcag111" title="Jump back to footnote 3 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:wcag111" title="Jump back to footnote 3 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:wcag111" title="Jump back to footnote 3 in the text">&#8617;</a><a class="footnote-backref" href="#fnref4:wcag111" title="Jump back to footnote 3 in the text">&#8617;</a><a class="footnote-backref" href="#fnref5:wcag111" title="Jump back to footnote 3 in the text">&#8617;</a><a class="footnote-backref" href="#fnref6:wcag111" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:wcag121">
+<p>WCAG 2.2 Understanding Docs. SC 1.2.1 Audio-only and Video-only (Prerecorded) (Level A). Disponível em: <a href="https://www.w3.org/WAI/WCAG22/Understanding/audio-only-and-video-only-prerecorded.html">https://www.w3.org/WAI/WCAG22/Understanding/audio-only-and-video-only-prerecorded.html</a>. Acesso em: 15 nov 2025.&#160;<a class="footnote-backref" href="#fnref:wcag121" title="Jump back to footnote 4 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:wcag121" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="fn:wcag122">
+<p>WCAG 2.2 Understanding Docs. SC 1.2.2 Captions (Prerecorded) (Level A). Disponível em: <a href="https://www.w3.org/WAI/WCAG22/Understanding/captions-prerecorded.html">https://www.w3.org/WAI/WCAG22/Understanding/captions-prerecorded.html</a>. Acesso em: 15 nov 2025.&#160;<a class="footnote-backref" href="#fnref:wcag122" title="Jump back to footnote 5 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:wcag122" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+</li>
+<li id="fn:wcag125">
+<p>WCAG 2.2 Understanding Docs. SC 1.2.5 Audio Description (Prerecorded) (Level AA). Disponível em: <a href="https://www.w3.org/WAI/WCAG22/Understanding/audio-description-prerecorded.html">https://www.w3.org/WAI/WCAG22/Understanding/audio-description-prerecorded.html</a>. Acesso em: 15 nov 2025.&#160;<a class="footnote-backref" href="#fnref:wcag125" title="Jump back to footnote 6 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:wcag125" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+</li>
+<li id="fn:wcag131">
+<p>WCAG 2.2 Understanding Docs. SC 1.3.1 Info and Relationships (Level A). Disponível em: <a href="https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships.html">https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships.html</a>. Acesso em: 15 nov 2025.&#160;<a class="footnote-backref" href="#fnref:wcag131" title="Jump back to footnote 7 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:wcag131" title="Jump back to footnote 7 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:wcag131" title="Jump back to footnote 7 in the text">&#8617;</a><a class="footnote-backref" href="#fnref4:wcag131" title="Jump back to footnote 7 in the text">&#8617;</a><a class="footnote-backref" href="#fnref5:wcag131" title="Jump back to footnote 7 in the text">&#8617;</a><a class="footnote-backref" href="#fnref6:wcag131" title="Jump back to footnote 7 in the text">&#8617;</a><a class="footnote-backref" href="#fnref7:wcag131" title="Jump back to footnote 7 in the text">&#8617;</a><a class="footnote-backref" href="#fnref8:wcag131" title="Jump back to footnote 7 in the text">&#8617;</a></p>
+</li>
+<li id="fn:wcag132">
+<p>WCAG 2.2 Understanding Docs. SC 1.3.2 Meaningful Sequence (Level A). Disponível em: <a href="https://www.w3.org/WAI/WCAG22/Understanding/meaningful-sequence.html">https://www.w3.org/WAI/WCAG22/Understanding/meaningful-sequence.html</a>. Acesso em: 15 nov 2025.&#160;<a class="footnote-backref" href="#fnref:wcag132" title="Jump back to footnote 8 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:wcag132" title="Jump back to footnote 8 in the text">&#8617;</a></p>
+</li>
+<li id="fn:wcag134">
+<p>WCAG 2.2 Understanding Docs. SC 1.3.4 Orientation (Level AA). Disponível em: <a href="https://www.w3.org/WAI/WCAG22/Understanding/orientation.html">https://www.w3.org/WAI/WCAG22/Understanding/orientation.html</a>. Acesso em: 15 nov 2025.&#160;<a class="footnote-backref" href="#fnref:wcag134" title="Jump back to footnote 9 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:wcag134" title="Jump back to footnote 9 in the text">&#8617;</a></p>
+</li>
+<li id="fn:wcag135">
+<p>WCAG 2.2 Understanding Docs. SC 1.3.5 Identify Input Purpose (Level AA). Disponível em: <a href="https://www.w3.org/WAI/WCAG22/Understanding/identify-input-purpose.html">https://www.w3.org/WAI/WCAG22/Understanding/identify-input-purpose.html</a>. Acesso em: 15 nov 2025.&#160;<a class="footnote-backref" href="#fnref:wcag135" title="Jump back to footnote 10 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:wcag135" title="Jump back to footnote 10 in the text">&#8617;</a></p>
+</li>
+<li id="fn:wcag142">
+<p>WCAG 2.2 Understanding Docs. SC 1.4.2 Audio Control (Level A). Disponível em: <a href="https://www.w3.org/WAI/WCAG22/Understanding/audio-control.html">https://www.w3.org/WAI/WCAG22/Understanding/audio-control.html</a>. Acesso em: 15 nov 2025.&#160;<a class="footnote-backref" href="#fnref:wcag142" title="Jump back to footnote 11 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:wcag142" title="Jump back to footnote 11 in the text">&#8617;</a></p>
+</li>
+<li id="fn:wcag144">
+<p>WCAG 2.2 Understanding Docs. SC 1.4.4 Resize Text (Level AA). Disponível em: <a href="https://www.w3.org/WAI/WCAG22/Understanding/resize-text.html">https://www.w3.org/WAI/WCAG22/Understanding/resize-text.html</a>. Acesso em: 15 nov 2025.&#160;<a class="footnote-backref" href="#fnref:wcag144" title="Jump back to footnote 12 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:wcag144" title="Jump back to footnote 12 in the text">&#8617;</a></p>
+</li>
+<li id="fn:wcag1410">
+<p>WCAG 2.2 Understanding Docs. SC 1.4.10 Reflow (Level AA). Disponível em: <a href="https://www.w3.org/WAI/WCAG22/Understanding/reflow.html">https://www.w3.org/WAI/WCAG22/Understanding/reflow.html</a>. Acesso em: 15 nov 2025.&#160;<a class="footnote-backref" href="#fnref:wcag1410" title="Jump back to footnote 13 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:wcag1410" title="Jump back to footnote 13 in the text">&#8617;</a></p>
+</li>
+<li id="fn:wcag211">
+<p>WCAG 2.2 Understanding Docs. SC 2.1.1 Keyboard (Level A). Disponível em: <a href="https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html">https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html</a>. Acesso em: 15 nov 2025.&#160;<a class="footnote-backref" href="#fnref:wcag211" title="Jump back to footnote 14 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:wcag211" title="Jump back to footnote 14 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:wcag211" title="Jump back to footnote 14 in the text">&#8617;</a><a class="footnote-backref" href="#fnref4:wcag211" title="Jump back to footnote 14 in the text">&#8617;</a><a class="footnote-backref" href="#fnref5:wcag211" title="Jump back to footnote 14 in the text">&#8617;</a><a class="footnote-backref" href="#fnref6:wcag211" title="Jump back to footnote 14 in the text">&#8617;</a></p>
+</li>
+<li id="fn:wcag212">
+<p>WCAG 2.2 Understanding Docs. SC 2.1.2 No Keyboard Trap (Level A). Disponível em: <a href="https://www.w3.org/WAI/WCAG22/Understanding/no-keyboard-trap.html">https://www.w3.org/WAI/WCAG22/Understanding/no-keyboard-trap.html</a>. Acesso em: 15 nov 2025.&#160;<a class="footnote-backref" href="#fnref:wcag212" title="Jump back to footnote 15 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:wcag212" title="Jump back to footnote 15 in the text">&#8617;</a></p>
+</li>
+<li id="fn:wcag214">
+<p>WCAG 2.2 Understanding Docs. SC 2.1.4 Character Key Shortcuts (Level A). Disponível em: <a href="https://www.w3.org/WAI/WCAG22/Understanding/character-key-shortcuts.html">https://www.w3.org/WAI/WCAG22/Understanding/character-key-shortcuts.html</a>. Acesso em: 15 nov 2025.&#160;<a class="footnote-backref" href="#fnref:wcag214" title="Jump back to footnote 16 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:wcag214" title="Jump back to footnote 16 in the text">&#8617;</a></p>
+</li>
+<li id="fn:wcag222">
+<p>WCAG 2.2 Understanding Docs. SC 2.2.2 Pause, Stop, Hide (Level A). Disponível em: <a href="https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html">https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html</a>. Acesso em: 15 nov 2025.&#160;<a class="footnote-backref" href="#fnref:wcag222" title="Jump back to footnote 17 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:wcag222" title="Jump back to footnote 17 in the text">&#8617;</a></p>
+</li>
+<li id="fn:wcag241">
+<p>WCAG 2.2 Understanding Docs. SC 2.4.1 Bypass Blocks (Level A). Disponível em: <a href="https://www.w3.org/WAI/WCAG22/Understanding/bypass-blocks.html">https://www.w3.org/WAI/WCAG22/Understanding/bypass-blocks.html</a>. Acesso em: 15 nov 2025.&#160;<a class="footnote-backref" href="#fnref:wcag241" title="Jump back to footnote 18 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:wcag241" title="Jump back to footnote 18 in the text">&#8617;</a></p>
+</li>
+<li id="fn:wcag243">
+<p>WCAG 2.2 Understanding Docs. SC 2.4.3 Focus Order (Level A). Disponível em: <a href="https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html">https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html</a>. Acesso em: 15 nov 2025.&#160;<a class="footnote-backref" href="#fnref:wcag243" title="Jump back to footnote 19 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:wcag243" title="Jump back to footnote 19 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:wcag243" title="Jump back to footnote 19 in the text">&#8617;</a><a class="footnote-backref" href="#fnref4:wcag243" title="Jump back to footnote 19 in the text">&#8617;</a></p>
+</li>
+<li id="fn:wcag246">
+<p>WCAG 2.2 Understanding Docs. SC 2.4.6 Headings and Labels (Level AA). Disponível em: <a href="https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels.html">https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels.html</a>. Acesso em: 15 nov 2025.&#160;<a class="footnote-backref" href="#fnref:wcag246" title="Jump back to footnote 20 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:wcag246" title="Jump back to footnote 20 in the text">&#8617;</a></p>
+</li>
+<li id="fn:wcag247">
+<p>WCAG 2.2 Understanding Docs. SC 2.4.7 Focus Visible (Level AA). Disponível em: <a href="https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html">https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html</a>. Acesso em: 15 nov 2025.&#160;<a class="footnote-backref" href="#fnref:wcag247" title="Jump back to footnote 21 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:wcag247" title="Jump back to footnote 21 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:wcag247" title="Jump back to footnote 21 in the text">&#8617;</a><a class="footnote-backref" href="#fnref4:wcag247" title="Jump back to footnote 21 in the text">&#8617;</a><a class="footnote-backref" href="#fnref5:wcag247" title="Jump back to footnote 21 in the text">&#8617;</a><a class="footnote-backref" href="#fnref6:wcag247" title="Jump back to footnote 21 in the text">&#8617;</a></p>
+</li>
+<li id="fn:wcag2411">
+<p>WCAG 2.2 Understanding Docs. SC 2.4.11 Focus Not Obscured (Minimum) (Level AA). Disponível em: <a href="https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum.html">https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum.html</a>. Acesso em: 15 nov 2025.&#160;<a class="footnote-backref" href="#fnref:wcag2411" title="Jump back to footnote 22 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:wcag2411" title="Jump back to footnote 22 in the text">&#8617;</a></p>
+</li>
+<li id="fn:wcag257">
+<p>WCAG 2.2 Understanding Docs. SC 2.5.7 Dragging Movements (Level AA). Disponível em: <a href="https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements.html">https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements.html</a>. Acesso em: 15 nov 2025.&#160;<a class="footnote-backref" href="#fnref:wcag257" title="Jump back to footnote 23 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:wcag257" title="Jump back to footnote 23 in the text">&#8617;</a></p>
+</li>
+<li id="fn:wcag258">
+<p>WCAG 2.2 Understanding Docs. SC 2.5.8 Target Size (Minimum) (Level AA). Disponível em: <a href="https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html">https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html</a>. Acesso em: 15 nov 2025.&#160;<a class="footnote-backref" href="#fnref:wcag258" title="Jump back to footnote 24 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:wcag258" title="Jump back to footnote 24 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:wcag258" title="Jump back to footnote 24 in the text">&#8617;</a><a class="footnote-backref" href="#fnref4:wcag258" title="Jump back to footnote 24 in the text">&#8617;</a></p>
+</li>
+<li id="fn:wcag322">
+<p>WCAG 2.2 Understanding Docs. SC 3.2.2 On Input (Level A). Disponível em: <a href="https://www.w3.org/WAI/WCAG22/Understanding/on-input.html">https://www.w3.org/WAI/WCAG22/Understanding/on-input.html</a>. Acesso em: 15 nov 2025.&#160;<a class="footnote-backref" href="#fnref:wcag322" title="Jump back to footnote 25 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:wcag322" title="Jump back to footnote 25 in the text">&#8617;</a></p>
+</li>
+<li id="fn:wcag331">
+<p>WCAG 2.2 Understanding Docs. SC 3.3.1 Error Identification (Level A). Disponível em: <a href="https://www.w3.org/WAI/WCAG22/Understanding/error-identification.html">https://www.w3.org/WAI/WCAG22/Understanding/error-identification.html</a>. Acesso em: 15 nov 2025.&#160;<a class="footnote-backref" href="#fnref:wcag331" title="Jump back to footnote 26 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:wcag331" title="Jump back to footnote 26 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:wcag331" title="Jump back to footnote 26 in the text">&#8617;</a><a class="footnote-backref" href="#fnref4:wcag331" title="Jump back to footnote 26 in the text">&#8617;</a></p>
+</li>
+<li id="fn:wcag332">
+<p>WCAG 2.2 Understanding Docs. SC 3.3.2 Labels or Instructions (Level A). Disponível em: <a href="https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions.html">https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions.html</a>. Acesso em: 15 nov 2025.&#160;<a class="footnote-backref" href="#fnref:wcag332" title="Jump back to footnote 27 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:wcag332" title="Jump back to footnote 27 in the text">&#8617;</a></p>
+</li>
+<li id="fn:wcag333">
+<p>WCAG 2.2 Understanding Docs. SC 3.3.3 Error Suggestion (Level AA). Disponível em: <a href="https://www.w3.org/WAI/WCAG22/Understanding/error-suggestion.html">https://www.w3.org/WAI/WCAG22/Understanding/error-suggestion.html</a>. Acesso em: 15 nov 2025.&#160;<a class="footnote-backref" href="#fnref:wcag333" title="Jump back to footnote 28 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:wcag333" title="Jump back to footnote 28 in the text">&#8617;</a></p>
+</li>
+<li id="fn:wcag337">
+<p>WCAG 2.2 Understanding Docs. SC 3.3.7 Redundant Entry (Level A). Disponível em: <a href="https://www.w3.org/WAI/WCAG22/Understanding/redundant-entry.html">https://www.w3.org/WAI/WCAG22/Understanding/redundant-entry.html</a>. Acesso em: 15 nov 2025.&#160;<a class="footnote-backref" href="#fnref:wcag337" title="Jump back to footnote 29 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:wcag337" title="Jump back to footnote 29 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:wcag337" title="Jump back to footnote 29 in the text">&#8617;</a><a class="footnote-backref" href="#fnref4:wcag337" title="Jump back to footnote 29 in the text">&#8617;</a></p>
+</li>
+<li id="fn:wcag338">
+<p>WCAG 2.2 Understanding Docs. SC 3.3.8 Accessible Authentication (Minimum) (Level AA). Disponível em: <a href="https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication-minimum.html">https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication-minimum.html</a>. Acesso em: 15 nov 2025.&#160;<a class="footnote-backref" href="#fnref:wcag338" title="Jump back to footnote 30 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:wcag338" title="Jump back to footnote 30 in the text">&#8617;</a></p>
+</li>
+<li id="fn:wcag339">
+<p>WCAG 2.2 Understanding Docs. SC 3.3.9 Accessible Authentication (Enhanced) (Level AAA). Disponível em: <a href="https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication-enhanced.html">https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication-enhanced.html</a>. Acesso em: 15 nov 2025.&#160;<a class="footnote-backref" href="#fnref:wcag339" title="Jump back to footnote 31 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:wcag339" title="Jump back to footnote 31 in the text">&#8617;</a></p>
+</li>
+<li id="fn:wcag412">
+<p>WCAG 2.2 Understanding Docs. SC 4.1.2 Name, Role, Value (Level A). Disponível em: <a href="https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html">https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html</a>. Acesso em: 15 nov 2025.&#160;<a class="footnote-backref" href="#fnref:wcag412" title="Jump back to footnote 32 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:wcag412" title="Jump back to footnote 32 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:wcag412" title="Jump back to footnote 32 in the text">&#8617;</a><a class="footnote-backref" href="#fnref4:wcag412" title="Jump back to footnote 32 in the text">&#8617;</a></p>
+</li>
+<li id="fn:wcag51">
+<p>WCAG 2.2 Understanding Docs. 5. Conformance. Disponível em: <a href="https://www.w3.org/WAI/WCAG22/Understanding/conformance.html">https://www.w3.org/WAI/WCAG22/Understanding/conformance.html</a>. Acesso em: 15 nov 2025.&#160;<a class="footnote-backref" href="#fnref:wcag51" title="Jump back to footnote 33 in the text">&#8617;</a></p>
+</li>
+<li id="fn:wcag22aa">
+<p>WCAG 2.2 W3C Recommendation. Web Content Accessibility Guidelines (WCAG) 2.2. Disponível em: <a href="https://www.w3.org/TR/WCAG22/">https://www.w3.org/TR/WCAG22/</a>. Acesso em: 15 nov 2025.&#160;<a class="footnote-backref" href="#fnref:wcag22aa" title="Jump back to footnote 34 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+      
+        <script src="../js/main.js"></script>
+      
+        <script src="../js/summary.js"></script>
+      
+    
+  </body>
+</html>

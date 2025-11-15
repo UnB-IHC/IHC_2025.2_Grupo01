@@ -1,0 +1,17 @@
+.bar-chart-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px; 
+    margin: 20px auto;
+}
+
+.doughnut-chart-container {
+    position: relative;
+    margin: 20px auto;
+    width: 300px; 
+    height: 300px;
+}
+
+.md-content .footnote-ref {
+    font-size: 1em;
+}
