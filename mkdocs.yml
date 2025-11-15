@@ -25,5 +25,6 @@ extra_css:
 
 markdown_extensions:
   - pymdownx.tasklist:
+      custom_checkbox: false
       clickable_checkbox: true
   - footnotes

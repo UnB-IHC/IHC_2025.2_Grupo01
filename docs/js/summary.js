@@ -1,19 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
     const canvasDoughnut = document.querySelector('#summary-doughnut-chart');
     const canvas100 = document.querySelector('#summary-chart-100');
+    const corNA = '#9E9E9E';
 
     if (!canvasDoughnut || !canvas100) {
         return;
     }
 
-    const labels = []; 
+    const labels = [];
     const originalData = [];
     
-    const checkedPercentData = [];
-    const uncheckedPercentData = [];
+    const conformePercentData = [];
+    const naoConformePercentData = [];
+    const naPercentData = [];
 
-    let grandTotalChecked = 0;
-    let grandTotalOverall = 0;
+    let grandTotalConforme = 0;
+    let grandTotalNaoConforme = 0;
+    let grandTotalNA = 0;
 
     for (let i = 0; i < localStorage.length; i++) {
         const key = localStorage.key(i);
@@ -22,21 +25,30 @@ document.addEventListener('DOMContentLoaded', () => {
             try {
                 const data = JSON.parse(localStorage.getItem(key));
                 
-                if (data && data.title && typeof data.checked === 'number' && typeof data.total === 'number') {
+                if (data && data.title && 
+                    typeof data.conforme === 'number' && 
+                    typeof data.nao_conforme === 'number' &&
+                    typeof data.na === 'number') {
                     
-                    const total = data.total;
-                    const checked = data.checked;
-                    
-                    grandTotalChecked += checked;
-                    grandTotalOverall += total;
+                    const conforme = data.conforme;
+                    const naoConforme = data.nao_conforme;
+                    const na = data.na;
+                    const total = conforme + naoConforme + na;
+
+                    grandTotalConforme += conforme;
+                    grandTotalNaoConforme += naoConforme;
+                    grandTotalNA += na;
 
                     labels.push(data.title);
-                    originalData.push({ checked: checked, total: total });
+                    originalData.push({ conforme: conforme, nao_conforme: naoConforme, na: na, total: total });
 
-                    const checkedPercent = (total > 0) ? (checked / total) * 100 : 0;
-                    const uncheckedPercent = (total > 0) ? ((total - checked) / total) * 100 : 0;
-                    checkedPercentData.push(checkedPercent);
-                    uncheckedPercentData.push(uncheckedPercent);
+                    const conformePercent = (total > 0) ? (conforme / total) * 100 : 0;
+                    const naoConformePercent = (total > 0) ? (naoConforme / total) * 100 : 0;
+                    const naPercent = (total > 0) ? (na / total) * 100 : 0;
+                    
+                    conformePercentData.push(conformePercent);
+                    naoConformePercentData.push(naoConformePercent);
+                    naPercentData.push(naPercent);
                 }
             } catch (e) {
                 console.error("Erro ao ler dados de progresso:", e);
@@ -50,28 +62,28 @@ document.addEventListener('DOMContentLoaded', () => {
         canvas100.parentElement.innerHTML = noDataMsg;
         return;
     }
-
+    
     const ctxDoughnut = canvasDoughnut.getContext('2d');
-    drawDoughnutChart(ctxDoughnut, grandTotalChecked, grandTotalOverall);
+    drawDoughnutChart(ctxDoughnut, grandTotalConforme, grandTotalNaoConforme, grandTotalNA, corNA);
 
     const chartHeight = (labels.length * 50) + 80;
 
     canvas100.parentElement.style.height = `${chartHeight}px`;
     const ctx100 = canvas100.getContext('2d');
-    draw100Chart(ctx100, labels, checkedPercentData, uncheckedPercentData, originalData);
+    draw100Chart(ctx100, labels, conformePercentData, naoConformePercentData, naPercentData, originalData, corNA);
 });
 
-function drawDoughnutChart(ctx, checked, total) {
-    const unchecked = total - checked;
-    const percentage = (total > 0) ? (checked / total) * 100 : 0;
+function drawDoughnutChart(ctx, conforme, naoConforme, na, corNA) {
+    const totalAplicavel = conforme + naoConforme;
+    const percentage = (totalAplicavel > 0) ? (conforme / totalAplicavel) * 100 : 0;
 
     new Chart(ctx, {
         type: 'doughnut',
         data: {
-            labels: ['Conforme', 'Não Conforme'],
+            labels: ['Conforme', 'Não Conforme', 'Não Aplicável'],
             datasets: [{
-                data: [checked, unchecked],
-                backgroundColor: ['#4CAF50', '#F57C00'],
+                data: [conforme, naoConforme, na],
+                backgroundColor: ['#4CAF50', '#F57C00', corNA],
                 hoverOffset: 4
             }]
         },
@@ -82,7 +94,7 @@ function drawDoughnutChart(ctx, checked, total) {
                 legend: { position: 'bottom' },
                 title: {
                     display: true,
-                    text: `Total: ${percentage.toFixed(1)}% Concluído`,
+                    text: `Total: ${percentage.toFixed(1)}% Concluído (dos itens aplicáveis)`,
                     font: { size: 18 }
                 },
                 tooltip: {
@@ -92,7 +104,6 @@ function drawDoughnutChart(ctx, checked, total) {
                             const value = context.raw;
                             return `${label}: ${value} itens`;
                         }
-
                     }
                 }
             }
@@ -100,14 +111,15 @@ function drawDoughnutChart(ctx, checked, total) {
     });
 }
 
-function draw100Chart(ctx, labels, checkedData, uncheckedData, originalData) {
+function draw100Chart(ctx, labels, conformeData, naoConformeData, naData, originalData, corNA) {
     new Chart(ctx, {
         type: 'bar',
         data: {
             labels: labels,
             datasets: [
-                { label: 'Conforme', data: checkedData, backgroundColor: '#4CAF50' },
-                { label: 'Não Conforme', data: uncheckedData, backgroundColor: '#F57C00' }
+                { label: 'Conforme', data: conformeData, backgroundColor: '#4CAF50' },
+                { label: 'Não Conforme', data: naoConformeData, backgroundColor: '#F57C00' },
+                { label: 'Não Aplicável', data: naData, backgroundColor: corNA }
             ]
         },
         options: {
@@ -129,14 +141,16 @@ function draw100Chart(ctx, labels, checkedData, uncheckedData, originalData) {
                             const i = context.dataIndex;
                             const original = originalData[i];
                             
-                            let countLabel;
+                            let count;
                             if (label === 'Conforme') {
-                                countLabel = `${original.checked}/${original.total} itens`;
+                                count = original.conforme;
+                            } else if (label === 'Não Conforme') {
+                                count = original.nao_conforme;
                             } else {
-                                const uncheckedCount = original.total - original.checked;
-                                countLabel = `${uncheckedCount}/${original.total} itens`;
+                                count = original.na;
                             }
-                            return `${label}: ${percentage}% (${countLabel})`;
+                            
+                            return `${label}: ${percentage}% (${count}/${original.total} itens)`;
                         }
                     }
                 }
