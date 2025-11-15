@@ -1,88 +1,135 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const canvasDoughnut = document.querySelector('#summary-doughnut-chart');
-    const canvas100 = document.querySelector('#summary-chart-100');
-    const corNA = '#9E9E9E';
+const siteChecklists = [
+    { path: "/design/" },
+    { path: "/devweb/" },
+    { path: "/conteudo/" },
+    { path: "/gestaodeprojetos/" }
+];
 
-    if (!canvasDoughnut || !canvas100) {
+const corNA = '#9E9E9E'
+
+document.addEventListener('DOMContentLoaded', () => {
+    const doughnutContainer = document.querySelector('.doughnut-chart-container');
+    const barContainer = document.querySelector('.bar-chart-container');
+
+    if (!doughnutContainer || !barContainer) {
         return;
     }
 
+    setLoadingMessage(doughnutContainer, barContainer, "Carregando dados dos checklists...");
+
+    processChecklists(doughnutContainer, barContainer);
+});
+
+function setLoadingMessage(doughnutContainer, barContainer, message) {
+    const loadingHTML = `<p style="text-align: center; padding: 20px;">${message}</p>`;
+    if (doughnutContainer) doughnutContainer.innerHTML = loadingHTML;
+    if (barContainer) barContainer.innerHTML = loadingHTML;
+}
+
+async function processChecklists(doughnutContainer, barContainer) {
+    
     const labels = [];
     const originalData = [];
-    
     const conformePercentData = [];
     const naoConformePercentData = [];
     const naPercentData = [];
-
     let grandTotalConforme = 0;
     let grandTotalNaoConforme = 0;
     let grandTotalNA = 0;
+    let grandTotalOverall = 0;
 
-    for (let i = 0; i < localStorage.length; i++) {
-        const key = localStorage.key(i);
-
-        if (key.startsWith('checklistProgress_')) {
-            try {
-                const data = JSON.parse(localStorage.getItem(key));
-                
-                if (data && data.title && 
-                    typeof data.conforme === 'number' && 
-                    typeof data.nao_conforme === 'number' &&
-                    typeof data.na === 'number') {
+    try {
+        const fetchPromises = siteChecklists.map(page => 
+            fetch(page.path)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`Não foi possível encontrar a página: ${page.file}`);
+                    }
+                    return response.text();
+                })
+                .then(htmlContent => {
+                    const parser = new DOMParser();
+                    const doc = parser.parseFromString(htmlContent, 'text/html');
                     
-                    const conforme = data.conforme;
-                    const naoConforme = data.nao_conforme;
-                    const na = data.na;
-                    const total = conforme + naoConforme + na;
-
-                    grandTotalConforme += conforme;
-                    grandTotalNaoConforme += naoConforme;
-                    grandTotalNA += na;
-
-                    labels.push(data.title);
-                    originalData.push({ conforme: conforme, nao_conforme: naoConforme, na: na, total: total });
-
-                    const conformePercent = (total > 0) ? (conforme / total) * 100 : 0;
-                    const naoConformePercent = (total > 0) ? (naoConforme / total) * 100 : 0;
-                    const naPercent = (total > 0) ? (na / total) * 100 : 0;
+                    const article = doc.querySelector('article');
+                    const totalItems = article ? article.querySelectorAll('input[type="checkbox"]').length : 0;
                     
-                    conformePercentData.push(conformePercent);
-                    naoConformePercentData.push(naoConformePercent);
-                    naPercentData.push(naPercent);
-                }
-            } catch (e) {
-                console.error("Erro ao ler dados de progresso:", e);
+                    const titleEl = doc.querySelector('h1');
+                    const pageTitle = titleEl ? titleEl.textContent.trim() : page.path;
+                    
+                    return {
+                        path: page.path,
+                        title: pageTitle,
+                        totalItems: totalItems
+                    };
+                })
+        );
+
+        const checklists = await Promise.all(fetchPromises);
+
+        checklists.forEach(page => {
+            const storageKey = 'checklistProgress_' + page.path; 
+            const savedData = JSON.parse(localStorage.getItem(storageKey));
+
+            let conforme = 0;
+            let naoConforme = 0;
+            let na = 0;
+            const total = page.totalItems;
+
+            if (savedData && savedData.title === page.title) {
+                conforme = savedData.conforme;
+                naoConforme = savedData.nao_conforme;
+                na = savedData.na;
+            } else {
+
+                naoConforme = total;
             }
-        }
+
+            grandTotalConforme += conforme;
+            grandTotalNaoConforme += naoConforme;
+            grandTotalNA += na;
+            grandTotalOverall += total;
+            labels.push(page.title);
+            originalData.push({ conforme: conforme, nao_conforme: naoConforme, na: na, total: total });
+            const conformePercent = (total > 0) ? (conforme / total) * 100 : 0;
+            const naoConformePercent = (total > 0) ? (naoConforme / total) * 100 : 0;
+            const naPercent = (total > 0) ? (na / total) * 100 : 0;
+            conformePercentData.push(conformePercent);
+            naoConformePercentData.push(naoConformePercent);
+            naPercentData.push(naPercent);
+        });
+
+        doughnutContainer.innerHTML = '<canvas id="summary-doughnut-chart"></canvas>';
+        barContainer.innerHTML = '<canvas id="summary-chart-100"></canvas>';
+        const ctxDoughnut = doughnutContainer.querySelector('canvas').getContext('2d');
+        const ctx100 = barContainer.querySelector('canvas').getContext('2d');
+
+
+        drawDoughnutChart(ctxDoughnut, grandTotalConforme, grandTotalNaoConforme, grandTotalNA, grandTotalOverall, corNA);
+
+        const chartHeight = (labels.length * 50) + 80;
+        document.querySelector('.bar-chart-container').style.height = `${chartHeight}px`;
+        draw100Chart(ctx100, labels, conformePercentData, naoConformePercentData, naPercentData, originalData, corNA);
+        barContainer.style.height = `${chartHeight}px`;
+
+    } catch (error) {
+        console.error("Erro ao processar checklists:", error);
+        setLoadingMessage(doughnutContainer, barContainer, "Erro ao carregar dados. Verifique o console.");
     }
+}
 
-    if (labels.length === 0) {
-        const noDataMsg = '<p style="text-align: center;">Ainda não há dados de progresso. Visite uma página de checklist e marque um item.</p>';
-        canvasDoughnut.parentElement.innerHTML = noDataMsg;
-        canvas100.parentElement.innerHTML = noDataMsg;
-        return;
-    }
-    
-    const ctxDoughnut = canvasDoughnut.getContext('2d');
-    drawDoughnutChart(ctxDoughnut, grandTotalConforme, grandTotalNaoConforme, grandTotalNA, corNA);
-
-    const chartHeight = (labels.length * 50) + 80;
-
-    canvas100.parentElement.style.height = `${chartHeight}px`;
-    const ctx100 = canvas100.getContext('2d');
-    draw100Chart(ctx100, labels, conformePercentData, naoConformePercentData, naPercentData, originalData, corNA);
-});
-
-function drawDoughnutChart(ctx, conforme, naoConforme, na, corNA) {
+function drawDoughnutChart(ctx, conforme, naoConforme, na, totalItensSite, corNA) {
     const totalAplicavel = conforme + naoConforme;
     const percentage = (totalAplicavel > 0) ? (conforme / totalAplicavel) * 100 : 0;
+
+    const totalNaoConformeGrafico = totalItensSite - conforme - na;
 
     new Chart(ctx, {
         type: 'doughnut',
         data: {
             labels: ['Conforme', 'Não Conforme', 'Não Aplicável'],
             datasets: [{
-                data: [conforme, naoConforme, na],
+                data: [conforme, totalNaoConformeGrafico, na],
                 backgroundColor: ['#4CAF50', '#F57C00', corNA],
                 hoverOffset: 4
             }]
