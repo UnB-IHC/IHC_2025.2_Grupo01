@@ -1,58 +1,157 @@
 # Desenvolvimento Web
 
 <div class="chart-container" style="position: relative; height:250px; width:250px; margin: 20px auto;">
-    <canvas class="checklist-pie-chart"></canvas>
+    <canvas class="checklist-pie-chart"></canvas>
 </div>
 
 ## Imagens
-- [ ] Imagens informativas: devem ter alt com descrição breve e significativa do conteúdo. WCAG 1.1.1 [^wcag111]; NBR [^abnt17225];
-- [ ] Imagens decorativas: devem ser ignoradas por leitores de tela, utilizando `alt=""` (vazio) ou `role="presentation"`. WCAG 1.1.1 [^wcag111]; NBR [^abnt17225];
-- [ ] Imagens com legenda ou título: deve ter legenda ou título associado à imagem com texto claro e descritivo. WCAG 2.4.6 [^wcag246]; NBR [^abnt17225];
-- [ ] Imagens em botões ou links o alt deve descrever a ação (ex: `alt="Pesquisar"`). WCAG 1.1.1 [^wcag111]; NBR [^abnt17225];
+- Imagens informativas: devem ter alt com descrição breve e significativa do conteúdo. WCAG 1.1.1 [^wcag111]; NBR [^abnt17225];
+  <br><input type="checkbox" name="item1" value="conforme"> Conforme
+  <br><input type="checkbox" name="item1" value="naoConforme"> Não conforme
+  <br><input type="checkbox" name="item1" value="naoAplicavel"> Não aplicável
+
+- Imagens decorativas: devem ser ignoradas por leitores de tela, utilizando `alt=""` (vazio) ou `role="presentation"`. WCAG 1.1.1 [^wcag111]; NBR [^abnt17225];
+  <br><input type="checkbox" name="item2" value="conforme"> Conforme
+  <br><input type="checkbox" name="item2" value="naoConforme"> Não conforme
+  <br><input type="checkbox" name="item2" value="naoAplicavel"> Não aplicável
+
+- Imagens com legenda ou título: deve ter legenda ou título associado à imagem com texto claro e descritivo. WCAG 2.4.6 [^wcag246]; NBR [^abnt17225];
+  <br><input type="checkbox" name="item3" value="conforme"> Conforme
+  <br><input type="checkbox" name="item3" value="naoConforme"> Não conforme
+  <br><input type="checkbox" name="item3" value="naoAplicavel"> Não aplicável
+
+- Imagens em botões ou links o alt deve descrever a ação (ex: `alt="Pesquisar"`). WCAG 1.1.1 [^wcag111]; NBR [^abnt17225];
+  <br><input type="checkbox" name="item4" value="conforme"> Conforme
+  <br><input type="checkbox" name="item4" value="naoConforme"> Não conforme
+  <br><input type="checkbox" name="item4" value="naoAplicavel"> Não aplicável
 
 ## Vídeos e Mídia
-- [ ] Legenda sincronizada: todo vídeo com áudio deve possuir legendas. WCAG 1.2.2 [^wcag122]; NBR [^abnt17225];
-- [ ] Transcrição textual: conteúdos em áudio devem ter transcrição equivalente. WCAG 1.2.1 [^wcag121]; NBR [^abnt17225];
-- [ ] Audiodescrição: obrigatória quando informações visuais forem essenciais à compreensão. WCAG 1.2.5 [^wcag125]; NBR [^abnt17225];
-- [ ] Controle de reprodução: não utilize autoplay, ofereça pausa, stop e volume ajustável. WCAG 1.4.2 [^wcag142], 2.2.2 [^wcag222]; NBR [^abnt17225];
-- [ ] Acessibilidade no player: garanta que todos os botões do player sejam acessíveis por teclado e tenham rótulos (`aria-label`). WCAG 2.1.1 [^wcag211]; Guia UK/BR [^guiaukbr];
+- Legenda sincronizada: todo vídeo com áudio deve possuir legendas. WCAG 1.2.2 [^wcag122]; NBR [^abnt17225];
+  <br><input type="checkbox" name="item5" value="conforme"> Conforme
+  <br><input type="checkbox" name="item5" value="naoConforme"> Não conforme
+  <br><input type="checkbox" name="item5" value="naoAplicavel"> Não aplicável
+
+- Transcrição textual: conteúdos em áudio devem ter transcrição equivalente. WCAG 1.2.1 [^wcag121]; NBR [^abnt17225];
+  <br><input type="checkbox" name="item6" value="conforme"> Conforme
+  <br><input type="checkbox" name="item6" value="naoConforme"> Não conforme
+  <br><input type="checkbox" name="item6" value="naoAplicavel"> Não aplicável
+
+- Audiodescrição: obrigatória quando informações visuais forem essenciais à compreensão. WCAG 1.2.5 [^wcag125]; NBR [^abnt17225];
+  <br><input type="checkbox" name="item7" value="conforme"> Conforme
+  <br><input type="checkbox" name="item7" value="naoConforme"> Não conforme
+  <br><input type="checkbox" name="item7" value="naoAplicavel"> Não aplicável
+
+- Controle de reprodução: não utilize autoplay, ofereça pausa, stop e volume ajustável. WCAG 1.4.2 [^wcag142], 2.2.2 [^wcag222]; NBR [^abnt17225];
+  <br><input type="checkbox" name="item8" value="conforme"> Conforme
+  <br><input type="checkbox" name="item8" value="naoConforme"> Não conforme
+  <br><input type="checkbox" name="item8" value="naoAplicavel"> Não aplicável
+
+- Acessibilidade no player: garanta que todos os botões do player sejam acessíveis por teclado e tenham rótulos (`aria-label`). WCAG 2.1.1 [^wcag211]; Guia UK/BR [^guiaukbr];
+  <br><input type="checkbox" name="item9" value="conforme"> Conforme
+  <br><input type="checkbox" name="item9" value="naoConforme"> Não conforme
+  <br><input type="checkbox" name="item9" value="naoAplicavel"> Não aplicável
 
 ## Navegação e Controles
-- [ ] Links e botões semânticos: links devem ter `href` válido e botões devem usar `<button>` com ação clara. WCAG 1.3.1 [^wcag131], 4.1.2 [^wcag412];
-- [ ] Atalho “Pular para o conteúdo”: inclua link no topo da página para ir direto à área principal. WCAG 2.4.1 [^wcag241];
-- [ ] Aviso de nova aba ou janela: informe quando o clique abrir novo contexto. WCAG 3.2.2 [^wcag322]; Guia UK/BR [^guiaukbr];
-- [ ] Foco e ordem lógica: a navegação via teclado deve seguir ordem coerente. WCAG 2.4.3 [^wcag243], 2.4.7 [^wcag247];
+- Links e botões semânticos: links devem ter `href` válido e botões devem usar `<button>` com ação clara. WCAG 1.3.1 [^wcag131], 4.1.2 [^wcag412];
+  <br><input type="checkbox" name="item10" value="conforme"> Conforme
+  <br><input type="checkbox" name="item10" value="naoConforme"> Não conforme
+  <br><input type="checkbox" name="item10" value="naoAplicavel"> Não aplicável
+
+- Atalho “Pular para o conteúdo”: inclua link no topo da página para ir direto à área principal. WCAG 2.4.1 [^wcag241];
+  <br><input type="checkbox" name="item11" value="conforme"> Conforme
+  <br><input type="checkbox" name="item11" value="naoConforme"> Não conforme
+  <br><input type="checkbox" name="item11" value="naoAplicavel"> Não aplicável
+
+- Aviso de nova aba ou janela: informe quando o clique abrir novo contexto. WCAG 3.2.2 [^wcag322]; Guia UK/BR [^guiaukbr];
+  <br><input type="checkbox" name="item12" value="conforme"> Conforme
+  <br><input type="checkbox" name="item12" value="naoConforme"> Não conforme
+  <br><input type="checkbox" name="item12" value="naoAplicavel"> Não aplicável
+
+- Foco e ordem lógica: a navegação via teclado deve seguir ordem coerente. WCAG 2.4.3 [^wcag243], 2.4.7 [^wcag247];
+  <br><input type="checkbox" name="item13" value="conforme"> Conforme
+  <br><input type="checkbox" name="item13" value="naoConforme"> Não conforme
+  <br><input type="checkbox" name="item13" value="naoAplicavel"> Não aplicável
 
 ## Formulários
-- [ ] Mensagens de erro claras: devem aparecer próximas ao campo e indicar como corrigir. WCAG 3.3.1 [^wcag331], 3.3.3 [^wcag333];
-- [ ] Autocompletar e dados persistentes: permita o uso de autocomplete e evite preenchimentos repetidos. WCAG 1.3.5 [^wcag135], 3.3.7 [^wcag337];
-- [ ] Sumário de validação: exibe lista de erros no topo após o envio. WCAG 3.3.1 [^wcag331]; Guia UK/BR [^guiaukbr];
-- [ ] Feedback visual e textual: deve fornecer feedback visual e textual em ações (envio, carregamento, sucesso, erro). NBR [^abnt17225];
-- [ ] Campos obrigatórios: devem ser identificados textual e visualmente (ex: “*Campo obrigatório”). WCAG 3.3.2 [^wcag332];
-- [ ] Evitar entrada redundante; autenticação acessível. WCAG 3.3.7 [^wcag337], 3.3.8 [^wcag338], 3.3.9 [^wcag339]; NBR [^abnt17225];
+- Mensagens de erro claras: devem aparecer próximas ao campo e indicar como corrigir. WCAG 3.3.1 [^wcag331], 3.3.3 [^wcag333];
+  <br><input type="checkbox" name="item14" value="conforme"> Conforme
+  <br><input type="checkbox" name="item14" value="naoConforme"> Não conforme
+  <br><input type="checkbox" name="item14" value="naoAplicavel"> Não aplicável
+
+- Autocompletar e dados persistentes: permita o uso de autocomplete e evite preenchimentos repetidos. WCAG 1.3.5 [^wcag135], 3.3.7 [^wcag337];
+  <br><input type="checkbox" name="item15" value="conforme"> Conforme
+  <br><input type="checkbox" name="item15" value="naoConforme"> Não conforme
+  <br><input type="checkbox" name="item15" value="naoAplicavel"> Não aplicável
+
+- Sumário de validação: exibe lista de erros no topo após o envio. WCAG 3.3.1 [^wcag331]; Guia UK/BR [^guiaukbr];
+  <br><input type="checkbox" name="item16" value="conforme"> Conforme
+  <br><input type="checkbox" name="item16" value="naoConforme"> Não conforme
+  <br><input type="checkbox" name="item16" value="naoAplicavel"> Não aplicável
+
+- Feedback visual e textual: deve fornecer feedback visual e textual em ações (envio, carregamento, sucesso, erro). NBR [^abnt17225];
+  <br><input type="checkbox" name="item17" value="conforme"> Conforme
+  <br><input type="checkbox" name="item17" value="naoConforme"> Não conforme
+  <br><input type="checkbox" name="item17" value="naoAplicavel"> Não aplicável
+
+- Campos obrigatórios: devem ser identificados textual e visualmente (ex: “*Campo obrigatório”). WCAG 3.3.2 [^wcag332];
+  <br><input type="checkbox" name="item18" value="conforme"> Conforme
+  <br><input type="checkbox" name="item18" value="naoConforme"> Não conforme
+  <br><input type="checkbox" name="item18" value="naoAplicavel"> Não aplicável
+
+- Evitar entrada redundante; autenticação acessível. WCAG 3.3.7 [^wcag337], 3.3.8 [^wcag338], 3.3.9 [^wcag339]; NBR [^abnt17225];
+  <br><input type="checkbox" name="item19" value="conforme"> Conforme
+  <br><input type="checkbox" name="item19" value="naoConforme"> Não conforme
+  <br><input type="checkbox" name="item19" value="naoAplicavel"> Não aplicável
 
 ## Estrutura e Semântica
-- [ ] Elementos nativos HTML: prefira `<button>`, `<ul>`, `<table>`, `<form>` em vez de divs genéricas. WCAG 1.3.1 [^wcag131], 4.1.2 [^wcag412];
-- [ ] Hierarquia de títulos: não pule níveis. (ex: `<h1>` direto para `<h3>`). WCAG 1.3.1 [^wcag131]; NBR 5.3.5 [^abnt17225];
-- [ ] Tabelas acessíveis: inclua `<caption>` e identifique cabeçalhos com `<th scope=“col/row”>`. WCAG 1.3.1 [^wcag131]; NBR 5.6.3, 5.6.5 [^abnt17225];
-- [ ] Ordem do DOM: deve seguir a ordem lógica de leitura e de tabulação, onde a navegação por teclado deve seguir a sequência visual. WCAG 1.3.2 [^wcag132]; NBR 5.13.6, 5.10.2 [^abnt17225];
+- Elementos nativos HTML: prefira `<button>`, `<ul>`, `<table>`, `<form>` em vez de divs genéricas. WCAG 1.3.1 [^wcag131], 4.1.2 [^wcag412];
+  <br><input type="checkbox" name="item20" value="conforme"> Conforme
+  <br><input type="checkbox" name="item20" value="naoConforme"> Não conforme
+  <br><input type="checkbox" name="item20" value="naoAplicavel"> Não aplicável
 
-## Modais e Diálogos
-- [ ] Foco no modal: o foco deve ir para o modal ao abrir e voltar ao elemento anterior ao fechar. WCAG 2.4.3 [^wcag243], 2.4.7 [^wcag247]; NBR 5.1.4 [^abnt17225];
-- [ ] Fechamento Acessível (Sem Armadilhas): o usuário deve poder fechar o componente via teclado (tecla `Esc` ou `Tab`) e deve existir um botão de fechar visível. O foco não deve ficar preso. WCAG 2.1.2 [^wcag212]; NBR 5.1.6 [^abnt17225];
-- [ ] Evitar sobreposição: não utilize modais dentro de outros modais ou fullscreen forçado. Guia UK/BR [^guiaukbr];
+- Hierarquia de títulos: não pule níveis. (ex: `<h1>` direto para `<h3>`). WCAG 1.3.1 [^wcag131]; NBR 5.3.5 [^abnt17225];
+  <br><input type="checkbox" name="item21" value="conforme"> Conforme
+  <br><input type="checkbox" name="item21" value="naoConforme"> Não conforme
+  <br><input type="checkbox" name="item21" value="naoAplicavel"> Não aplicável
 
-## Dispositivos Móveis e Toque
-- [ ] Layout responsivo: deve ajustar-se sem rolagem horizontal e suportar zoom de até 200%. WCAG 1.4.10 [^wcag1410], 1.4.4 [^wcag144];
-- [ ] Áreas de toque adequadas: botões e links devem ter tamanho e espaçamento suficientes para o toque. WCAG 2.5.8 [^wcag258];
-- [ ] Orientação flexível: o conteúdo deve funcionar tanto em modo retrato quanto em paisagem. WCAG 1.3.4 [^wcag134]; NBR [^abnt17225];
-- [ ] Alternativa ao arrastar; alvo mínimo. WCAG 2.5.7 [^wcag257], 2.5.8 [^wcag258]; NBR [^abnt17225];
+- Tabelas acessíveis: inclua `<caption>` e identifique cabeçalhos com `<th scope=“col/row”>`. WCAG 1.3.1 [^wcag131]; NBR 5.6.3, 5.6.5 [^abnt17225];
+  <br><input type="checkbox" name="item22" value="conforme"> Conforme
+  <br><input type="checkbox" name="item22" value="naoConforme"> Não conforme
+  <br><input type="checkbox" name="item22" value="naoAplicavel"> Não aplicável
+
+- Ordem do DOM: deve seguir a ordem lógica de leitura e de tabulação, onde a navegação por teclado deve seguir a sequência visual. WCAG 1.3.2 [^wcag132]; NBR 5.13.6, 5.10.2 [^abnt17225];
+  <br><input type="checkbox" name="item23" value="conforme"> Conforme
+  <br><input type="checkbox" name="item23" value="naoConforme"> Não conforme
+  <br><input type="checkbox" name="item23" value="naoAplicavel"> Não aplicável
+
+## Componentes Dinâmicos
+- Foco no modal: o foco deve ir para o modal ao abrir e voltar ao elemento anterior ao fechar. WCAG 2.4.3 [^wcag243], 2.4.7 [^wcag247]; NBR 5.1.4 [^abnt17225];
+  <br><input type="checkbox" name="item24" value="conforme"> Conforme
+  <br><input type="checkbox" name="item24" value="naoConforme"> Não conforme
+  <br><input type="checkbox" name="item24" value="naoAplicavel"> Não aplicável
+
+- Fechamento Acessível (Sem Armadilhas): o usuário deve poder fechar o componente via teclado (tecla `Esc` ou `Tab`) e deve existir um botão de fechar visível. O foco não deve ficar preso. WCAG 2.1.2 [^wcag212]; NBR 5.1.6 [^abnt17225];
+  <br><input type="checkbox" name="item25" value="conforme"> Conforme
+  <br><input type="checkbox" name="item25" value="naoConforme"> Não conforme
+  <br><input type="checkbox" name="item25" value="naoAplicavel"> Não aplicável
+
+- Evitar sobreposição: não utilize modais dentro de outros modais ou fullscreen forçado. Guia UK/BR [^guiaukbr];
+  <br><input type="checkbox" name="item26" value="conforme"> Conforme
+  <br><input type="checkbox" name="item26" value="naoConforme"> Não conforme
+  <br><input type="checkbox" name="item26" value="naoAplicavel"> Não aplicável
 
 ## Teclado e Interação
-- [ ] Acessibilidade total via teclado: todas as funções devem ser operáveis sem mouse. WCAG 2.1.1 [^wcag211]; NBR 5.1.13 [^abnt17225];
-- [ ] Foco visível: o elemento ativo deve ter destaque claro e visível. WCAG 2.4.7 [^wcag247], 2.4.11 [^wcag2411]; NBR 5.1.1, 5.1.3 [^abnt17225];
-- [ ] Equivalentes ao mouseover: toda interação por mouse deve ter equivalente no teclado. WCAG 2.1.1 [^wcag211]; NBR 5.1.8, 5.1.9 [^abnt17225];
-- [ ] Atalhos de teclado: fornece atalhos quando apropriado e personalizáveis. WCAG 2.1.4 [^wcag214]; NBR 5.1.11 [^abnt17225]; Guia UK/BR [^guiaukbr];
+- Acessibilidade total via teclado: todas as funções devem ser operáveis sem mouse. WCAG 2.1.1 [^wcag211]; NBR 5.1.13 [^abnt17225];
+  <br><input type="checkbox" name="item31" value="conforme"> Conforme
+  <br><input type="checkbox" name="item31" value="naoConforme"> Não conforme
+  <br><input type="checkbox" name="item31" value="naoAplicavel"> Não aplicável
+
+- Foco visível: o elemento ativo deve ter destaque claro e visível. WCAG 2.4.7 [^wcag247], 2.4.11 [^wcag2411]; NBR 5.1.1, 5.1.3 [^abnt17225];
+  <br><input type="checkbox" name="item32" value="conforme"> Conforme
+  <br><input type="checkbox" name="item32" value="naoConforme"> Não conforme
+  <br><input type="checkbox" name="item32" value="naoAplicavel"> Não aplicável
+
+- Equivalentes ao mouseover: toda interação por mouse deve ter equivalente no teclado
 
 ## Referências
 

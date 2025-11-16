@@ -1,24 +1,70 @@
 # Conteúdo
 
 <div class="chart-container" style="position: relative; height:250px; width:250px; margin: 20px auto;">
-    <canvas class="checklist-pie-chart"></canvas>
+    <canvas class="checklist-pie-chart"></canvas>
 </div>
 
 ## Linguagem
-- [ ] Texto claro e direto, sem jargões desnecessários. NBR [^abnt17225]; Guia UK/BR [^guiaukbr];
-- [ ] Use “pessoas com deficiência” e especifique quando fizer sentido. NBR [^abnt17225]; Guia UK/BR [^guiaukbr];
-- [ ] Evite figuras de linguagem, frases longas e “senso de urgência”. NBR [^abnt17225]; Guia UK/BR [^guiaukbr];
+- Texto claro e direto, sem jargões desnecessários. NBR [^abnt17225]; Guia UK/BR [^guiaukbr];
+<br>
+  <input type="checkbox" name="item1" value="conforme"> Conforme<br>
+  <input type="checkbox" name="item1" value="naoConforme"> Não conforme<br>
+  <input type="checkbox" name="item1" value="naoAplicavel"> Não aplicável
+
+- Use “pessoas com deficiência” e especifique quando fizer sentido. NBR [^abnt17225]; Guia UK/BR [^guiaukbr];
+<br>
+  <input type="checkbox" name="item2" value="conforme"> Conforme<br>
+  <input type="checkbox" name="item2" value="naoConforme"> Não conforme<br>
+  <input type="checkbox" name="item2" value="naoAplicavel"> Não aplicável
+
+- Evite figuras de linguagem, frases longas e “senso de urgência”. NBR [^abnt17225]; Guia UK/BR [^guiaukbr];
+<br>
+  <input type="checkbox" name="item3" value="conforme"> Conforme<br>
+  <input type="checkbox" name="item3" value="naoConforme"> Não conforme<br>
+  <input type="checkbox" name="item3" value="naoAplicavel"> Não aplicável
 
 ## Links, botões e microtextos
-- [ ] Rótulos explicam ação/destino (“Acessar relatório”, “Enviar formulário”). WCAG 2.4.6 [^wcag246], 3.3.2 [^wcag332], 4.1.2 [^wcag412]; NBR [^abnt17225];
-- [ ] Hashtags no formato Primeira Letra Maiúscula. Guia UK/BR [^guiaukbr];
-- [ ] Emojis com moderação. Guia UK/BR [^guiaukbr];
-- [ ] Links/botões compreensíveis isoladamente; ícones clicáveis com texto. WCAG 2.4.4 [^wcag244], 4.1.2 [^wcag412]; NBR [^abnt17225]; Guia UK/BR [^guiaukbr];
+- Rótulos explicam ação/destino (“Acessar relatório”, “Enviar formulário”). WCAG 2.4.6 [^wcag246], 3.3.2 [^wcag332], 4.1.2 [^wcag412]; NBR [^abnt17225];
+<br>
+  <input type="checkbox" name="item4" value="conforme"> Conforme<br>
+  <input type="checkbox" name="item4" value="naoConforme"> Não conforme<br>
+  <input type="checkbox" name="item4" value="naoAplicavel"> Não aplicável
+
+- Hashtags no formato Primeira Letra Maiúscula. Guia UK/BR [^guiaukbr];
+<br>
+  <input type="checkbox" name="item5" value="conforme"> Conforme<br>
+  <input type="checkbox" name="item5" value="naoConforme"> Não conforme<br>
+  <input type="checkbox" name="item5" value="naoAplicavel"> Não aplicável
+
+- Emojis com moderação. Guia UK/BR [^guiaukbr];
+<br>
+  <input type="checkbox" name="item6" value="conforme"> Conforme<br>
+  <input type="checkbox" name="item6" value="naoConforme"> Não conforme<br>
+  <input type="checkbox" name="item6" value="naoAplicavel"> Não aplicável
+
+- Links/botões compreensíveis isoladamente; ícones clicáveis com texto. WCAG 2.4.4 [^wcag244], 4.1.2 [^wcag412]; NBR [^abnt17225]; Guia UK/BR [^guiaukbr];
+<br>
+  <input type="checkbox" name="item7" value="conforme"> Conforme<br>
+  <input type="checkbox" name="item7" value="naoConforme"> Não conforme<br>
+  <input type="checkbox" name="item7" value="naoAplicavel"> Não aplicável
 
 ## Imagens, vídeos e áudios
-- [ ] Resuma o essencial da imagem; complemente no texto, se complexo. WCAG 1.1.1 [^wcag111]; NBR [^abnt17225];
-- [ ] Vídeos com legendas; podcasts/áudios com transcrição. WCAG 1.2.1 [^wcag121], 1.2.2 [^wcag122]; NBR [^abnt17225];
-- [ ] Em podcasts, considerar intérprete/recursos visuais de apoio quando aplicável. Guia UK/BR [^guiaukbr];
+- Resuma o essencial da imagem; complemente no texto, se complexo. WCAG 1.1.1 [^wcag111]; NBR [^abnt17225];
+  <input type="checkbox" name="item8" value="conforme"> Conforme<br>
+  <input type="checkbox" name="item8" value="naoConforme"> Não conforme<br>
+  <input type="checkbox" name="item8" value="naoAplicavel"> Não aplicável
+
+- Vídeos com legendas; podcasts/áudios com transcrição. WCAG 1.2.1 [^wcag121], 1.2.2 [^wcag122]; NBR [^abnt17225];
+<br>
+  <input type="checkbox" name="item9" value="conforme"> Conforme<br>
+  <input type="checkbox" name="item9" value="naoConforme"> Não conforme<br>
+  <input type="checkbox" name="item9" value="naoAplicavel"> Não aplicável
+
+- Em podcasts, considerar intérprete/recursos visuais de apoio quando aplicável. Guia UK/BR [^guiaukbr];
+<br>
+  <input type="checkbox" name="item10" value="conforme"> Conforme<br>
+  <input type="checkbox" name="item10" value="naoConforme"> Não conforme<br>
+  <input type="checkbox" name="item10" value="naoAplicavel"> Não aplicável
 
 ## Referências
 
