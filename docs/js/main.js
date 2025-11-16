@@ -1,159 +1,88 @@
 document.addEventListener('DOMContentLoaded', () => {
     const canvas = document.querySelector('.checklist-pie-chart');
-    if (!canvas) { return; }
+    if (!canvas) return;
 
-    const checkboxes = document.querySelectorAll('article input[type="checkbox"]');
-    if (checkboxes.length === 0) {
-        if (canvas) canvas.parentElement.style.display = 'none';
-        return;
-    }
-
-    const storageKey = 'checklistProgress_' + window.location.pathname;
     const ctx = canvas.getContext('2d');
     let chartInstance = null;
-    const corNA = '#9E9E9E';
 
-    function getCheckboxKey(checkbox) {
-        return checkbox.parentElement.textContent.trim();
-    }
+    const allCheckboxes = document.querySelectorAll('input[type="checkbox"][name^="item"]');
 
-    function handleTriStateMouseDown(event) {
-        event.stopImmediatePropagation();
+    function updateChart() {
+        let counts = { conforme: 0, naoConforme: 0, naoAplicavel: 0, pendente: 0 };
         
-        const cb = event.target;
+        const itemNames = new Set(Array.from(allCheckboxes).map(cb => cb.name));
 
-        if (cb.checked) { 
-            cb.checked = false;
-            cb.indeterminate = true;
-        } else if (cb.indeterminate) {
-            cb.checked = false;
-            cb.indeterminate = false;
-        } else {
-            cb.checked = true;
-            cb.indeterminate = false;
-        }
-        
-        applyStyle(cb);
-        
-        updateChartAndSave();
-    }
+        itemNames.forEach(name => {
+            const checkboxesInGroup = document.querySelectorAll(`input[type="checkbox"][name="${name}"]`);
+            
+            let selected = Array.from(checkboxesInGroup).find(cb => cb.checked);
 
-    function killClickEvent(event) {
-        event.preventDefault(); 
-        event.stopPropagation();
-        event.stopImmediatePropagation();
-    }
+            checkboxesInGroup.forEach(cb => {
+                if (cb !== selected) {
+                    cb.checked = false;
+                }
+            });
 
-    function applyStyle(checkbox) {
-        const li = checkbox.closest('li');
-        if (!li) return;
-        
-        if (checkbox.indeterminate) {
-            li.classList.add('na-item');
-        } else {
-            li.classList.remove('na-item');
-        }
-    }
-
-    function updateChartAndSave() {
-        let conformeCount = 0;
-        let naoConformeCount = 0;
-        let naCount = 0;
-        let itemsState = {};
-
-        checkboxes.forEach(cb => {
-            const key = getCheckboxKey(cb);
-            let state;
-
-            applyStyle(cb); 
-
-            if (cb.checked) {
-                state = 'conforme';
-                conformeCount++;
-            } else if (cb.indeterminate) {
-                state = 'nao_aplicavel';
-                naCount++;
+            if (selected) {
+                if (selected.value === 'conforme') counts.conforme++;
+                else if (selected.value === 'naoConforme') counts.naoConforme++;
+                else if (selected.value === 'naoAplicavel') counts.naoAplicavel++;
             } else {
-                state = 'nao_conforme';
-                naoConformeCount++;
+                counts.pendente++;
             }
-            itemsState[key] = state;
         });
 
-        const data = [conformeCount, naoConformeCount, naCount];
-        if (chartInstance) {
-            chartInstance.data.datasets[0].data = data;
-            chartInstance.update();
-        } else {
+        
+        let data = [counts.conforme, counts.naoConforme, counts.naoAplicavel, counts.pendente];
+        let labels = ['Conforme', 'Não Conforme', 'Não Aplicável'];
+        let colors = ['#4CAF50', '#F57C00', '#9E9E9E', '#BDBDBD']; 
+
+        const total = data.reduce((a, b) => a + b, 0);
+
+        if (total === 0) {
+             data = [1];
+             labels = ['Nenhum item'];
+             colors = ['#E0E0E0'];
+        }
+
+        if (!chartInstance) {
             chartInstance = new Chart(ctx, {
                 type: 'pie',
                 data: {
-                    labels: ['Conforme', 'Não Conforme', 'Não Aplicável'],
+                    labels: labels,
                     datasets: [{
                         data: data,
-                        backgroundColor: ['#4CAF50', '#F57C00', corNA], 
+                        backgroundColor: colors,
                         hoverOffset: 4
                     }]
                 },
                 options: {
                     responsive: true,
-                    maintainAspectRatio: false,
                     plugins: {
                         legend: { position: 'bottom' },
-                        title: { display: true, text: 'Progresso da Página' }
+                        title: { display: true, text: 'Progresso da Página' },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    if (total === 0) return `0 itens`;
+                                    const value = context.parsed;
+                                    const percent = total > 0 ? (value / total * 100).toFixed(1) : 0;
+                                    return `${context.label}: ${value} (${percent}%)`;
+                                }
+                            }
+                        }
                     }
                 }
             });
-        }
-
-        const pageTitle = document.querySelector('article h1')?.textContent.trim() || 'Página Sem Título';
-        const progressData = {
-            title: pageTitle,
-            conforme: conformeCount,
-            nao_conforme: naoConformeCount,
-            na: naCount,
-            items: itemsState
-        };
-        localStorage.setItem(storageKey, JSON.stringify(progressData));
-    }
-
-    function loadProgress() {
-        const savedData = localStorage.getItem(storageKey);
-        if (!savedData) return;
-
-        try {
-            const data = JSON.parse(savedData);
-            if (!data.items) return;
-
-            checkboxes.forEach(cb => {
-                const key = getCheckboxKey(cb);
-                const state = data.items[key];
-                
-                if (state === 'conforme') {
-                    cb.checked = true;
-                    cb.indeterminate = false;
-                } else if (state === 'nao_aplicavel') {
-                    cb.checked = false;
-                    cb.indeterminate = true;
-                } else {
-                    cb.checked = false;
-                    cb.indeterminate = false;
-                }
-                
-                applyStyle(cb); 
-            });
-
-        } catch (e) {
-            console.error('Erro ao carregar progresso do checklist:', e);
+        } else {
+            chartInstance.data.labels = labels;
+            chartInstance.data.datasets[0].data = data;
+            chartInstance.data.datasets[0].backgroundColor = colors;
+            chartInstance.update();
         }
     }
- 
-    loadProgress();
-    updateChartAndSave(); 
 
-    checkboxes.forEach(checkbox => {
-        checkbox.addEventListener('mousedown', handleTriStateMouseDown, { capture: true });
-        
-        checkbox.addEventListener('click', killClickEvent, { capture: true });
-    });
+    updateChart();
+
+    allCheckboxes.forEach(cb => cb.addEventListener('change', updateChart));
 });

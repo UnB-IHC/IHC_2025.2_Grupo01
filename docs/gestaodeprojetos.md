@@ -1,23 +1,56 @@
 # Gestão de Projetos
 
 <div class="chart-container" style="position: relative; height:250px; width:250px; margin: 20px auto;">
-    <canvas class="checklist-pie-chart"></canvas>
+    <canvas class="checklist-pie-chart"></canvas>
 </div>
 
 ## Iniciação e governança
-- [ ] Acessibilidade no DoD desde o início. NBR [^abnt17225]; Guia UK/BR [^guiaukbr];
-- [ ] Personas com necessidades diversas; testes com usuários. NBR [^abnt17225]; Guia UK/BR [^guiaukbr];
-- [ ] Em cada entrega: teclado, foco, linguagem clara, formulários, mídias com alternativas. WCAG 2.1.x [^wcag21x], 2.4.7 [^wcag247], 1.2.x [^wcag12x], 3.3.x [^wcag33x]; NBR [^abnt17225];
+- Acessibilidade no DoD desde o início. NBR [^abnt17225]; Guia UK/BR [^guiaukbr];  
+  <input type="checkbox" name="item1" value="conforme"> Conforme  
+  <input type="checkbox" name="item1" value="naoConforme"> Não conforme  
+  <input type="checkbox" name="item1" value="naoAplicavel"> Não aplicável
+
+- Personas com necessidades diversas; testes com usuários. NBR [^abnt17225]; Guia UK/BR [^guiaukbr];  
+  <input type="checkbox" name="item2" value="conforme"> Conforme  
+  <input type="checkbox" name="item2" value="naoConforme"> Não conforme  
+  <input type="checkbox" name="item2" value="naoAplicavel"> Não aplicável
+
+- Em cada entrega: teclado, foco, linguagem clara, formulários, mídias com alternativas. WCAG 2.1.x [^wcag21x], 2.4.7 [^wcag247], 1.2.x [^wcag12x], 3.3.x [^wcag33x]; NBR [^abnt17225];  
+  <input type="checkbox" name="item3" value="conforme"> Conforme  
+  <input type="checkbox" name="item3" value="naoConforme"> Não conforme  
+  <input type="checkbox" name="item3" value="naoAplicavel"> Não aplicável
 
 ## Planejamento
-- [ ] Atividades, cronograma e responsáveis de acessibilidade. NBR [^abnt17225]; Guia UK/BR [^guiaukbr];
-- [ ] Recursos (pessoas, softwares, cursos) previstos. NBR [^abnt17225]; Guia UK/BR [^guiaukbr];
-- [ ] Critérios visando WCAG AA e NBR 17225. WCAG 2.2 (nível AA) [^wcag22aa]; NBR [^abnt17225];
-- [ ] Participação ativa de PcD e canal de barreiras. NBR [^abnt17225]; Guia UK/BR [^guiaukbr];
+- Atividades, cronograma e responsáveis de acessibilidade. NBR [^abnt17225]; Guia UK/BR [^guiaukbr];  
+  <input type="checkbox" name="item4" value="conforme"> Conforme  
+  <input type="checkbox" name="item4" value="naoConforme"> Não conforme  
+  <input type="checkbox" name="item4" value="naoAplicavel"> Não aplicável
+
+- Recursos (pessoas, softwares, cursos) previstos. NBR [^abnt17225]; Guia UK/BR [^guiaukbr];  
+  <input type="checkbox" name="item5" value="conforme"> Conforme  
+  <input type="checkbox" name="item5" value="naoConforme"> Não conforme  
+  <input type="checkbox" name="item5" value="naoAplicavel"> Não aplicável
+
+- Critérios visando WCAG AA e NBR 17225. WCAG 2.2 (nível AA) [^wcag22aa]; NBR [^abnt17225];  
+  <input type="checkbox" name="item6" value="conforme"> Conforme  
+  <input type="checkbox" name="item6" value="naoConforme"> Não conforme  
+  <input type="checkbox" name="item6" value="naoAplicavel"> Não aplicável
+
+- Participação ativa de PcD e canal de barreiras. NBR [^abnt17225]; Guia UK/BR [^guiaukbr];  
+  <input type="checkbox" name="item7" value="conforme"> Conforme  
+  <input type="checkbox" name="item7" value="naoConforme"> Não conforme  
+  <input type="checkbox" name="item7" value="naoAplicavel"> Não aplicável
 
 ## Testes e Conformidade
-- [ ] Registrar achados, priorizar correções e acompanhar. NBR [^abnt17225]; Guia UK/BR [^guiaukbr];
-- [ ] Alvo: conformidade WCAG AA / NBR 17225. WCAG 2.2 (AA) [^wcag22aa]; NBR [^abnt17225];
+- Registrar achados, priorizar correções e acompanhar. NBR [^abnt17225]; Guia UK/BR [^guiaukbr];  
+  <input type="checkbox" name="item8" value="conforme"> Conforme  
+  <input type="checkbox" name="item8" value="naoConforme"> Não conforme  
+  <input type="checkbox" name="item8" value="naoAplicavel"> Não aplicável
+
+- Alvo: conformidade WCAG AA / NBR 17225. WCAG 2.2 (AA) [^wcag22aa]; NBR [^abnt17225];  
+  <input type="checkbox" name="item9" value="conforme"> Conforme  
+  <input type="checkbox" name="item9" value="naoConforme"> Não conforme  
+  <input type="checkbox" name="item9" value="naoAplicavel"> Não aplicável
 
 ## Referências
 
