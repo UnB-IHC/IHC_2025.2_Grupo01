@@ -1,8 +1,8 @@
 # IHC
 
-<div align="center">
-<img src=" " alt="Logo do projeto" style="width: 100px">
-</div>
+<p align="center">
+  <img src="docs/assets/images/logo-acessicheck.png" alt="Logo AcessiCheck" width="160px">
+</p>
 
 
 ## Introdução
