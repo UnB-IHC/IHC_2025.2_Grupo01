@@ -9,15 +9,15 @@ theme:
   favicon: assets/images/logo-icon.png
   palette:
     - scheme: default
-      primary: 'grey'
-      accent: 'purple'
+      primary: 'green'
+      accent: 'orange'
       toggle:
         icon: material/weather-night
         name: Alternar para modo escuro
 
     - scheme: slate
-      primary: 'grey'
-      accent: 'purple'
+      primary: 'green'
+      accent: 'orange'
       toggle:
         icon: material/weather-sunny
         name: Alternar para modo claro
