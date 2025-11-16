@@ -5,7 +5,7 @@
 </div>
 
 ## Linguagem
-- Texto claro e direto, sem jargões desnecessários. NBR [^abnt17225]; Guia UK/BR [^guiaukbr];
+- Usar linguagem simples, com frases curtas, diretas e sem jargões desnecessários. NBR [^abnt17225]; Guia UK/BR [^guiaukbr];
 <br>
   <input type="checkbox" name="item1" value="conforme"> Conforme<br>
   <input type="checkbox" name="item1" value="naoConforme"> Não conforme<br>
@@ -17,7 +17,7 @@
   <input type="checkbox" name="item2" value="naoConforme"> Não conforme<br>
   <input type="checkbox" name="item2" value="naoAplicavel"> Não aplicável
 
-- Evite figuras de linguagem, frases longas e “senso de urgência”. NBR [^abnt17225]; Guia UK/BR [^guiaukbr];
+- Evitar metáforas, ambiguidade, frases longas e “senso de urgência”. NBR [^abnt17225]; Guia UK/BR [^guiaukbr];
 <br>
   <input type="checkbox" name="item3" value="conforme"> Conforme<br>
   <input type="checkbox" name="item3" value="naoConforme"> Não conforme<br>
