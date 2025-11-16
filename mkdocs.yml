@@ -4,19 +4,22 @@ repo_name: IHC_2025.2_Grupo01
 
 theme:
   name: material
+  language: pt
+  logo: assets/images/logo-acessicheck.png
+  favicon: assets/images/logo-acessicheck.png
   palette:
     - scheme: default
       primary: 'green'
       accent: 'orange'
       toggle:
-        icon: material/brightness-4
+        icon: material/weather-night
         name: Alternar para modo escuro
 
     - scheme: slate
       primary: 'green'
       accent: 'orange'
       toggle:
-        icon: material/brightness-7
+        icon: material/weather-sunny
         name: Alternar para modo claro
 
 nav:
@@ -27,7 +30,7 @@ nav:
   - Conteúdo: conteudo.md
   - Gestão de Projetos: gestaodeprojetos.md
   - Heurísticas de Nielsen: heuristicas.md
-  - Ferramentas: ferramentas.md
+  - Ferramentas de Acessibilidade: ferramentas.md
 
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js
