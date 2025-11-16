@@ -1,7 +1,7 @@
 # AcessiCheck
 
 <p align="center">
-  <img src="assets/images/logo-acessicheck.png" alt="Logo AcessiCheck" width="160px">
+  <img src="assets/images/logo-acessicheck.png" alt="Logo AcessiCheck" width="240px">
 </p>
 
 ## Sobre o Projeto
@@ -20,7 +20,7 @@ Com isso, o AcessiCheck busca:
 
 ## Projeto original
 
-Este guia é inspirado e deriva do projeto original [VerificAAA](https://github.com/vitorfleonardo/VerificaAAA),disponível em: [https://github.com/vitorfleonardo/VerificaAAA](https://github.com/vitorfleonardo/VerificaAAA)
+Este guia é inspirado e deriva do projeto original [VerificAAA](https://github.com/vitorfleonardo/VerificaAAA).
 
 Nosso trabalho amplia essa iniciativa, adicionando:
 
