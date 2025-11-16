@@ -54,3 +54,9 @@
     display: flex;
     align-items: center;
 }
+
+.md-header .md-logo img {
+  content: url('/docs/assets/images/logo-icon.png');
+  height: 40px !important;
+  width: auto !important;
+}
