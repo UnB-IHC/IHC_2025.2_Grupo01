@@ -1,12 +1,12 @@
-site_name: Guia de Acessibilidade Digital
+site_name: AcessiCheck
 repo_url: https://github.com/UnB-IHC/IHC_2025.2_Grupo01/
 repo_name: IHC_2025.2_Grupo01
 
 theme:
   name: material
   language: pt
-  logo: assets/images/logo-acessicheck.png
-  favicon: assets/images/logo-acessicheck.png
+  logo: assets/images/logo-icon.png
+  favicon: assets/images/logo-icon.png
   palette:
     - scheme: default
       primary: 'green'
