@@ -152,6 +152,9 @@
   <br><input type="checkbox" name="item32" value="naoAplicavel"> Não aplicável
 
 - Equivalentes ao mouseover: toda interação por mouse deve ter equivalente no teclado
+  <br><input type="checkbox" name="item31" value="conforme"> Conforme
+  <br><input type="checkbox" name="item31" value="naoConforme"> Não conforme
+  <br><input type="checkbox" name="item31" value="naoAplicavel"> Não aplicável
 
 ## Referências
 
