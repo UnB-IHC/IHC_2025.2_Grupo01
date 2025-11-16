@@ -10,14 +10,14 @@ theme:
   palette:
     - scheme: default
       primary: 'green'
-      accent: 'orange'
+      accent: 'deep purple'
       toggle:
         icon: material/weather-night
         name: Alternar para modo escuro
 
     - scheme: slate
       primary: 'green'
-      accent: 'orange'
+      accent: 'deep purple'
       toggle:
         icon: material/weather-sunny
         name: Alternar para modo claro

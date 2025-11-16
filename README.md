@@ -1,17 +1,31 @@
-# IHC
+# AcessiCheck — Checklist de Acessibilidade
 
 <p align="center">
-  <img src="docs/assets/images/logo-acessicheck.png" alt="Logo AcessiCheck" width="160px">
+  <img src="docs/assets/images/logo-acessicheck.png" alt="Logo AcessiCheck" width="180px">
 </p>
 
+---
 
-## Introdução
+## Visão Geral
 
-Este repositório tem como propósito fornecer um checklist prático de acessibilidade para projetos, principalmente de desenvolvimento de software, que incluem: desenvolvimento web, design, geração de conteúdo e gestão de projetos. 
+O **AcessiCheck** é um guia e checklist prático de acessibilidade voltado para projetos de **desenvolvimento de software**, incluindo:
 
-## IHC
+- Desenvolvimento Web  
+- Design de Interfaces  
+- Produção e Revisão de Conteúdo  
+- Gestão e Planejamento de Projetos  
 
-O projeto criado a partir do curso de Interação Humano Computador, ministrado pela docente Rejane Maria da Costa Figueiredo, na Universidade de Brasília (UnB). 
+Ele reúne recomendações da **WCAG 2.2**, **ABNT NBR 17225:2025** e do **Guia de Boas Práticas em Acessibilidade Digital (UK/BR)**, consolidando em um único lugar critérios objetivos para avaliação.
+
+---
+
+## Origem do Projeto
+
+Este projeto foi desenvolvido no contexto da disciplina **Interação Humano-Computador (IHC)**, ministrada pela professora **Rejane Maria da Costa Figueiredo**, na **Universidade de Brasília (UnB)**.
+
+Seu propósito é oferecer uma ferramenta clara e didática para apoiar avaliações de acessibilidade, tanto para fins acadêmicos quanto para aplicação em projetos reais.
+
+---
 
 ## Contribuidores
 
