@@ -34,9 +34,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         
         let data = [counts.conforme, counts.naoConforme, counts.naoAplicavel, counts.pendente];
-        let labels = ['Conforme', 'Não Conforme', 'Não Aplicável'];
+        let labels = ['Conforme', 'Não Conforme', 'Não Aplicável', 'Pendente'];
         let colors = ['#4CAF50', '#F57C00', '#9E9E9E', '#BDBDBD']; 
-
         const total = data.reduce((a, b) => a + b, 0);
 
         if (total === 0) {
@@ -82,6 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // Inicializa o gráfico
     updateChart();
 
     allCheckboxes.forEach(cb => cb.addEventListener('change', updateChart));
