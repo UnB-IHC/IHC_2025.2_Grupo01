@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AcessiCheck</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-content">
+        <svg class="logo" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/>
+          <path d="M16 8C16 8 12 12 12 16C12 20 16 24 16 24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <path d="M16 8C16 8 20 12 20 16C20 20 16 24 16 24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <h1>AcessiCheck</h1>
+      </div>
+      <p class="subtitle">Verificador de Acessibilidade Web</p>
+    </header>
+
+    <main>
+      <section class="action-section">
+        <button id="analyzeBtn" class="analyze-button" aria-label="Analisar acessibilidade da página atual">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M19 19L13 13M15 8C15 11.866 11.866 15 8 15C4.13401 15 1 11.866 1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <span>Analisar Página Atual</span>
+        </button>
+      </section>
+
+      <section id="loadingSection" class="loading-section hidden" aria-live="polite">
+        <div class="spinner" role="status" aria-label="Analisando página"></div>
+        <p>Analisando página...</p>
+      </section>
+
+      <section id="resultsSection" class="results-section hidden" aria-live="polite">
+        <div class="summary">
+          <h2>Resumo da Análise</h2>
+          <div class="summary-cards">
+            <div class="summary-card critical">
+              <span class="count" id="criticalCount">0</span>
+              <span class="label">Críticos</span>
+            </div>
+            <div class="summary-card high">
+              <span class="count" id="highCount">0</span>
+              <span class="label">Altos</span>
+            </div>
+            <div class="summary-card medium">
+              <span class="count" id="mediumCount">0</span>
+              <span class="label">Médios</span>
+            </div>
+            <div class="summary-card low">
+              <span class="count" id="lowCount">0</span>
+              <span class="label">Baixos</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="problems-container">
+          <h2>Problemas Encontrados</h2>
+          <div id="problemsList" class="problems-list"></div>
+        </div>
+
+        <div id="noProblems" class="no-problems hidden">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="24" cy="24" r="22" stroke="#10b981" stroke-width="2"/>
+            <path d="M14 24L20 30L34 16" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <h3>Nenhum problema encontrado!</h3>
+          <p>A página está em conformidade com os critérios verificados.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p class="footer-text">Baseado em WCAG 2.2 e ABNT NBR 17225:2025</p>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
