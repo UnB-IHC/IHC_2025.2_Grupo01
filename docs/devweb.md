@@ -47,7 +47,7 @@
   <br><input type="checkbox" name="item9" value="naoAplicavel"> Não aplicável
 
 ## Navegação e Controles
-- Links e botões semânticos: links devem ter `href` válido e botões devem usar `<button>` com ação clara. WCAG 1.3.1 [^wcag131], 4.1.2 [^wcag412];
+- Links semânticos: todos os links devem utilizar o elemento <a> com href válido, texto descritivo ou nome acessível que indique claramente o propósito do destino. WCAG 1.3.1 [^wcag131], 4.1.2 [^wcag412];
   <br><input type="checkbox" name="item10" value="conforme"> Conforme
   <br><input type="checkbox" name="item10" value="naoConforme"> Não conforme
   <br><input type="checkbox" name="item10" value="naoAplicavel"> Não aplicável
@@ -142,9 +142,9 @@
   <br><input type="checkbox" name="item32" value="naoAplicavel"> Não aplicável
 
 - Equivalentes ao mouseover: toda interação por mouse deve ter equivalente no teclado
-  <br><input type="checkbox" name="item31" value="conforme"> Conforme
-  <br><input type="checkbox" name="item31" value="naoConforme"> Não conforme
-  <br><input type="checkbox" name="item31" value="naoAplicavel"> Não aplicável
+  <br><input type="checkbox" name="item32" value="conforme"> Conforme
+  <br><input type="checkbox" name="item32" value="naoConforme"> Não conforme
+  <br><input type="checkbox" name="item32" value="naoAplicavel"> Não aplicável
 
 ## Referências
 
