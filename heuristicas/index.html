@@ -1,0 +1,1287 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../gestaodeprojetos/">
+      
+      
+        <link rel="next" href="../ferramentas/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/logo-icon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Heurísticas de Nielsen - AcessiCheck</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#heuristicas-de-nielsen" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href=".." title="AcessiCheck" class="md-header__button md-logo" aria-label="AcessiCheck" data-md-component="logo">
+      
+  <img src="../assets/images/logo-icon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AcessiCheck
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Heurísticas de Nielsen
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="deep-purple"  aria-label="Alternar para modo escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Alternar para modo escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="deep-purple"  aria-label="Alternar para modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Alternar para modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando a pesquisa
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/UnB-IHC/IHC_2025.2_Grupo01/" title="Ir ao repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    IHC_2025.2_Grupo01
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="AcessiCheck" class="md-nav__button md-logo" aria-label="AcessiCheck" data-md-component="logo">
+      
+  <img src="../assets/images/logo-icon.png" alt="logo">
+
+    </a>
+    AcessiCheck
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/UnB-IHC/IHC_2025.2_Grupo01/" title="Ir ao repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    IHC_2025.2_Grupo01
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introdução
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../progresso/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Design
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../devweb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Desenvolvimento Web
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../conteudo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Conteúdo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gestaodeprojetos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gestão de Projetos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Heurísticas de Nielsen
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Heurísticas de Nielsen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-visibilidade-do-status-do-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Visibilidade do status do sistema
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Visibilidade do status do sistema">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#como-avaliar-em-um-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Como avaliar em um site:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-correspondencia-entre-o-sistema-e-o-mundo-real" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Correspondência entre o sistema e o mundo real
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Correspondência entre o sistema e o mundo real">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#como-avaliar-em-um-site_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Como avaliar em um site:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-controle-e-liberdade-do-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Controle e liberdade do usuário
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Controle e liberdade do usuário">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#como-avaliar-em-um-site_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Como avaliar em um site:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-consistencia-e-padroes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Consistência e padrões
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Consistência e padrões">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#como-avaliar-em-um-site_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Como avaliar em um site:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-prevencao-de-erros" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Prevenção de erros
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Prevenção de erros">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#como-avaliar-em-um-site_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Como avaliar em um site:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-reconhecimento-em-vez-de-memorizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Reconhecimento em vez de memorização
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Reconhecimento em vez de memorização">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#como-avaliar-em-um-site_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Como avaliar em um site:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-flexibilidade-e-eficiencia-de-uso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Flexibilidade e eficiência de uso
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Flexibilidade e eficiência de uso">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#como-avaliar-em-um-site_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Como avaliar em um site:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-design-estetico-e-minimalista" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Design estético e minimalista
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Design estético e minimalista">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#como-avaliar-em-um-site_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Como avaliar em um site:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-ajuda-aos-usuarios-para-reconhecer-diagnosticar-e-recuperar-erros" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Ajuda aos usuários para reconhecer, diagnosticar e recuperar erros
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Ajuda aos usuários para reconhecer, diagnosticar e recuperar erros">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#como-avaliar-em-um-site_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Como avaliar em um site:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-ajuda-e-documentacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Ajuda e documentação
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Ajuda e documentação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#como-avaliar-em-um-site_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Como avaliar em um site:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ferramentas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ferramentas de Acessibilidade
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-visibilidade-do-status-do-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Visibilidade do status do sistema
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Visibilidade do status do sistema">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#como-avaliar-em-um-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Como avaliar em um site:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-correspondencia-entre-o-sistema-e-o-mundo-real" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Correspondência entre o sistema e o mundo real
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Correspondência entre o sistema e o mundo real">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#como-avaliar-em-um-site_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Como avaliar em um site:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-controle-e-liberdade-do-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Controle e liberdade do usuário
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Controle e liberdade do usuário">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#como-avaliar-em-um-site_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Como avaliar em um site:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-consistencia-e-padroes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Consistência e padrões
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Consistência e padrões">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#como-avaliar-em-um-site_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Como avaliar em um site:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-prevencao-de-erros" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Prevenção de erros
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Prevenção de erros">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#como-avaliar-em-um-site_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Como avaliar em um site:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-reconhecimento-em-vez-de-memorizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Reconhecimento em vez de memorização
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Reconhecimento em vez de memorização">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#como-avaliar-em-um-site_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Como avaliar em um site:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-flexibilidade-e-eficiencia-de-uso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Flexibilidade e eficiência de uso
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Flexibilidade e eficiência de uso">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#como-avaliar-em-um-site_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Como avaliar em um site:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-design-estetico-e-minimalista" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Design estético e minimalista
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Design estético e minimalista">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#como-avaliar-em-um-site_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Como avaliar em um site:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-ajuda-aos-usuarios-para-reconhecer-diagnosticar-e-recuperar-erros" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Ajuda aos usuários para reconhecer, diagnosticar e recuperar erros
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Ajuda aos usuários para reconhecer, diagnosticar e recuperar erros">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#como-avaliar-em-um-site_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Como avaliar em um site:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-ajuda-e-documentacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Ajuda e documentação
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Ajuda e documentação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#como-avaliar-em-um-site_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Como avaliar em um site:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="heuristicas-de-nielsen">Heurísticas de Nielsen</h1>
+<p>As <strong>10 Heurísticas de Usabilidade de Jakob Nielsen</strong> são princípios amplamente utilizados para identificar problemas de usabilidade em interfaces digitais.<br />
+Esta página apresenta cada heurística, uma explicação resumida e orientações de como aplicá-las na avaliação de um site.</p>
+<hr />
+<h2 id="1-visibilidade-do-status-do-sistema">1. Visibilidade do status do sistema</h2>
+<p>A interface deve manter o usuário informado sobre o que está acontecendo, com feedback rápido e claro.</p>
+<h3 id="como-avaliar-em-um-site">Como avaliar em um site:</h3>
+<ul>
+<li>Verificar se links, botões e formulários mostram estado de carregamento.</li>
+<li>Conferir se o usuário percebe quando uma ação foi concluída (ex.: envio de formulário).</li>
+<li>Avaliar se páginas que demoram a carregar apresentam indicadores visuais.</li>
+</ul>
+<hr />
+<h2 id="2-correspondencia-entre-o-sistema-e-o-mundo-real">2. Correspondência entre o sistema e o mundo real</h2>
+<p>O sistema deve usar linguagem simples, próxima do vocabulário cotidiano, evitando termos técnicos desnecessários.</p>
+<h3 id="como-avaliar-em-um-site_1">Como avaliar em um site:</h3>
+<ul>
+<li>Identificar textos longos, formais ou técnicos demais.</li>
+<li>Procurar jargões sem explicação.</li>
+<li>Verificar inconsistências de linguagem (ex.: “deficientes” vs. “pessoas com deficiência”).</li>
+</ul>
+<hr />
+<h2 id="3-controle-e-liberdade-do-usuario">3. Controle e liberdade do usuário</h2>
+<p>O usuário deve conseguir desfazer ações, sair de fluxos indesejados e retornar facilmente.</p>
+<h3 id="como-avaliar-em-um-site_2">Como avaliar em um site:</h3>
+<ul>
+<li>Verificar presença de trilhas de navegação ou navegação clara.</li>
+<li>Observar se é fácil retornar à página anterior.</li>
+<li>Analisar se menus e submenus abrem e fecham de forma previsível.</li>
+</ul>
+<hr />
+<h2 id="4-consistencia-e-padroes">4. Consistência e padrões</h2>
+<p>A interface deve manter padrões visuais e funcionais entre páginas.</p>
+<h3 id="como-avaliar-em-um-site_3">Como avaliar em um site:</h3>
+<ul>
+<li>Verificar se botões seguem o mesmo estilo em todo o portal.</li>
+<li>Analisar consistência de ícones, cores e tipografias.</li>
+<li>Checar se termos importantes são usados sempre da mesma forma.</li>
+</ul>
+<hr />
+<h2 id="5-prevencao-de-erros">5. Prevenção de erros</h2>
+<p>O design deve evitar que erros aconteçam antes de ocorrerem.</p>
+<h3 id="como-avaliar-em-um-site_4">Como avaliar em um site:</h3>
+<ul>
+<li>Verificar se formulários validam campos corretamente.</li>
+<li>Observar se links são claramente distinguíveis de textos comuns.</li>
+<li>Avaliar se ícones sem texto podem induzir a cliques errados.</li>
+</ul>
+<hr />
+<h2 id="6-reconhecimento-em-vez-de-memorizacao">6. Reconhecimento em vez de memorização</h2>
+<p>O usuário não deve depender da memória para interagir com a interface.</p>
+<h3 id="como-avaliar-em-um-site_5">Como avaliar em um site:</h3>
+<ul>
+<li>Verificar se menus são claros, autoexplicativos e não escondem funções essenciais.</li>
+<li>Observar se páginas têm títulos informativos e coerentes.</li>
+<li>Avaliar se o portal evita exigir que o usuário lembre informações de páginas anteriores.</li>
+</ul>
+<hr />
+<h2 id="7-flexibilidade-e-eficiencia-de-uso">7. Flexibilidade e eficiência de uso</h2>
+<p>A interface deve atender tanto iniciantes quanto usuários experientes.</p>
+<h3 id="como-avaliar-em-um-site_6">Como avaliar em um site:</h3>
+<ul>
+<li>Verificar se recursos como pesquisa, atalhos e acessibilidade (ex.: VLibras) estão disponíveis.</li>
+<li>Avaliar se conteúdos acessados frequentemente estão fáceis de encontrar.</li>
+<li>Testar responsividade em dispositivos móveis.</li>
+</ul>
+<hr />
+<h2 id="8-design-estetico-e-minimalista">8. Design estético e minimalista</h2>
+<p>O design deve evitar excesso de informações e priorizar clareza.</p>
+<h3 id="como-avaliar-em-um-site_7">Como avaliar em um site:</h3>
+<ul>
+<li>Procurar páginas com blocos de texto grandes e pesados.</li>
+<li>Verificar se banners, imagens ou anúncios atrapalham a leitura.</li>
+<li>Avaliar se existem elementos visuais redundantes.</li>
+</ul>
+<hr />
+<h2 id="9-ajuda-aos-usuarios-para-reconhecer-diagnosticar-e-recuperar-erros">9. Ajuda aos usuários para reconhecer, diagnosticar e recuperar erros</h2>
+<p>Mensagens de erro devem ser claras e construtivas.</p>
+<h3 id="como-avaliar-em-um-site_8">Como avaliar em um site:</h3>
+<ul>
+<li>Testar formulários e observar mensagens como “Falha na autenticação”.</li>
+<li>Avaliar se as mensagens ajudam o usuário a corrigir o erro.</li>
+<li>Verificar se os erros indicam a causa real do problema.</li>
+</ul>
+<hr />
+<h2 id="10-ajuda-e-documentacao">10. Ajuda e documentação</h2>
+<p>Mesmo interfaces simples podem exigir apoio ao usuário.</p>
+<h3 id="como-avaliar-em-um-site_9">Como avaliar em um site:</h3>
+<ul>
+<li>Verificar se há páginas de ajuda, perguntas frequentes ou instruções.</li>
+<li>Avaliar se informações institucionais são acessíveis e completas.</li>
+<li>Checar se documentos PDF ou guias estão legíveis e acessíveis.</li>
+</ul>
+<hr />
+<h1 id="como-usar-este-documento-na-avaliacao">Como usar este documento na avaliação</h1>
+<ol>
+<li>Acesse cada página do portal desejado.  </li>
+<li>Liste problemas encontrados para cada heurística.  </li>
+<li>Atribua severidade (baixa, média, alta).  </li>
+<li>Sugira melhorias específicas.</li>
+</ol>
+<hr />
+<h1 id="referencia">Referência</h1>
+<p>Nielsen, J. (1994). <em>10 Usability Heuristics for User Interface Design.</em> Nielsen Norman Group.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+      
+        <script src="../js/main.js"></script>
+      
+        <script src="../js/summary.js"></script>
+      
+    
+  </body>
+</html>
