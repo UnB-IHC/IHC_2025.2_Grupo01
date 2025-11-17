@@ -10,11 +10,6 @@
   <br><input type="checkbox" name="item1" value="naoConforme"> Não conforme
   <br><input type="checkbox" name="item1" value="naoAplicavel"> Não aplicável
 
-- Imagens decorativas: devem ser ignoradas por leitores de tela, utilizando `alt=""` (vazio) ou `role="presentation"`. WCAG 1.1.1 [^wcag111]; NBR [^abnt17225];
-  <br><input type="checkbox" name="item2" value="conforme"> Conforme
-  <br><input type="checkbox" name="item2" value="naoConforme"> Não conforme
-  <br><input type="checkbox" name="item2" value="naoAplicavel"> Não aplicável
-
 - Imagens com legenda ou título: deve ter legenda ou título associado à imagem com texto claro e descritivo. WCAG 2.4.6 [^wcag246]; NBR [^abnt17225];
   <br><input type="checkbox" name="item3" value="conforme"> Conforme
   <br><input type="checkbox" name="item3" value="naoConforme"> Não conforme
@@ -46,7 +41,7 @@
   <br><input type="checkbox" name="item8" value="naoConforme"> Não conforme
   <br><input type="checkbox" name="item8" value="naoAplicavel"> Não aplicável
 
-- Acessibilidade no player: garanta que todos os botões do player sejam acessíveis por teclado e tenham rótulos (`aria-label`). WCAG 2.1.1 [^wcag211]; Guia UK/BR [^guiaukbr];
+- Acessibilidade no player: garanta que todos os botões do player sejam acessíveis por teclado. WCAG 2.1.1 [^wcag211]; Guia UK/BR [^guiaukbr];
   <br><input type="checkbox" name="item9" value="conforme"> Conforme
   <br><input type="checkbox" name="item9" value="naoConforme"> Não conforme
   <br><input type="checkbox" name="item9" value="naoAplicavel"> Não aplicável
@@ -108,11 +103,6 @@
   <br><input type="checkbox" name="item20" value="conforme"> Conforme
   <br><input type="checkbox" name="item20" value="naoConforme"> Não conforme
   <br><input type="checkbox" name="item20" value="naoAplicavel"> Não aplicável
-
-- Hierarquia de títulos: não pule níveis. (ex: `<h1>` direto para `<h3>`). WCAG 1.3.1 [^wcag131]; NBR 5.3.5 [^abnt17225];
-  <br><input type="checkbox" name="item21" value="conforme"> Conforme
-  <br><input type="checkbox" name="item21" value="naoConforme"> Não conforme
-  <br><input type="checkbox" name="item21" value="naoAplicavel"> Não aplicável
 
 - Tabelas acessíveis: inclua `<caption>` e identifique cabeçalhos com `<th scope=“col/row”>`. WCAG 1.3.1 [^wcag131]; NBR 5.6.3, 5.6.5 [^abnt17225];
   <br><input type="checkbox" name="item22" value="conforme"> Conforme
