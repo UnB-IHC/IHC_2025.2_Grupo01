@@ -437,7 +437,7 @@ footer {
   display: none !important;
 }
 
-/* BotÃĢo de Localizar */
+/* Botão de Localizar */
 .locate-button {
   display: inline-flex;
   align-items: center;
@@ -469,7 +469,7 @@ footer {
   flex-shrink: 0;
 }
 
-/* Badge de Contador de OcorrÃŠncias */
+/* Badge de Contador de Ocorrências */
 .occurrence-badge {
   display: inline-flex;
   align-items: center;
@@ -485,7 +485,7 @@ footer {
   box-shadow: 0 2px 6px rgba(30, 64, 175, 0.4);
 }
 
-/* Lista de OcorrÃŠncias */
+/* Lista de Ocorrências */
 .occurrences-title {
   margin-top: 12px;
   margin-bottom: 8px;
@@ -516,7 +516,7 @@ footer {
   border-bottom: none;
 }
 
-/* Scrollbar customizada para lista de ocorrÃŠncias */
+/* Scrollbar customizada para lista de ocorrências */
 .occurrences-list::-webkit-scrollbar {
   width: 6px;
 }

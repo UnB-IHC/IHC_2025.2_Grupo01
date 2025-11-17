@@ -1,9 +1,9 @@
 // Módulo de Destaque Visual de Elementos
-const AcessiCheckHighlighter = {
-  overlayId: 'AcessiCheck-checker-overlay',
+const A11yHighlighter = {
+  overlayId: 'a11y-checker-overlay',
   currentHighlight: null,
 
-  // Criar overlay 
+  // Criar overlay se não existir
   createOverlay() {
     let overlay = document.getElementById(this.overlayId);
     if (!overlay) {
@@ -31,9 +31,9 @@ const AcessiCheckHighlighter = {
     }
     
     // Remover classes de destaque dos elementos
-    const highlighted = document.querySelectorAll('.AcessiCheck-checker-highlighted');
+    const highlighted = document.querySelectorAll('.a11y-checker-highlighted');
     highlighted.forEach(el => {
-      el.classList.remove('AcessiCheck-checker-highlighted');
+      el.classList.remove('a11y-checker-highlighted');
       el.style.outline = '';
       el.style.outlineOffset = '';
     });
@@ -83,7 +83,7 @@ const AcessiCheckHighlighter = {
       const color = colors[severity] || colors['alto'];
 
       // Adicionar outline ao elemento
-      element.classList.add('AcessiCheck-checker-highlighted');
+      element.classList.add('a11y-checker-highlighted');
       element.style.outline = `3px solid ${color}`;
       element.style.outlineOffset = '2px';
 
@@ -99,7 +99,7 @@ const AcessiCheckHighlighter = {
         background-color: ${color}20;
         pointer-events: none;
         box-shadow: 0 0 0 4px ${color}40;
-        animation: AcessiCheck-pulse 2s infinite;
+        animation: a11y-pulse 2s infinite;
       `;
 
       // Criar label clicável com informações do erro
@@ -164,11 +164,11 @@ const AcessiCheckHighlighter = {
 
   // Adicionar estilos de animação
   addAnimationStyles() {
-    if (!document.getElementById('AcessiCheck-checker-styles')) {
+    if (!document.getElementById('a11y-checker-styles')) {
       const style = document.createElement('style');
-      style.id = 'AcessiCheck-checker-styles';
+      style.id = 'a11y-checker-styles';
       style.textContent = `
-        @keyframes AcessiCheck-pulse {
+        @keyframes a11y-pulse {
           0%, 100% {
             opacity: 1;
             transform: scale(1);
@@ -179,7 +179,7 @@ const AcessiCheckHighlighter = {
           }
         }
         
-        .AcessiCheck-checker-highlighted {
+        .a11y-checker-highlighted {
           scroll-margin: 100px;
         }
       `;
@@ -219,13 +219,13 @@ const AcessiCheckHighlighter = {
   // Mostrar tooltip com informações do erro
   showTooltip(problemInfo, x, y, color) {
     // Remover tooltip anterior se existir
-    const existingTooltip = document.getElementById('AcessiCheck-checker-tooltip');
+    const existingTooltip = document.getElementById('a11y-checker-tooltip');
     if (existingTooltip) {
       existingTooltip.remove();
     }
     
     const tooltip = document.createElement('div');
-    tooltip.id = 'AcessiCheck-checker-tooltip';
+    tooltip.id = 'a11y-checker-tooltip';
     tooltip.style.cssText = `
       position: absolute;
       top: ${y + 40}px;
@@ -248,7 +248,7 @@ const AcessiCheckHighlighter = {
         <div style="font-weight: bold; font-size: 16px; color: ${color};">
           ${problemInfo.title}
         </div>
-        <button id="AcessiCheck-tooltip-close" style="
+        <button id="a11y-tooltip-close" style="
           background: none;
           border: none;
           font-size: 20px;
@@ -303,7 +303,7 @@ const AcessiCheckHighlighter = {
     overlay.appendChild(tooltip);
     
     // Botão de fechar
-    const closeBtn = document.getElementById('AcessiCheck-tooltip-close');
+    const closeBtn = document.getElementById('a11y-tooltip-close');
     if (closeBtn) {
       closeBtn.addEventListener('click', () => {
         tooltip.remove();
@@ -349,7 +349,7 @@ const AcessiCheckHighlighter = {
         const color = colors[problem.severity] || colors['alto'];
 
         // Adicionar outline
-        element.classList.add('AcessiCheck-checker-highlighted');
+        element.classList.add('a11y-checker-highlighted');
         element.style.outline = `2px solid ${color}`;
         element.style.outlineOffset = '1px';
 
@@ -420,4 +420,4 @@ const AcessiCheckHighlighter = {
 };
 
 // Expor globalmente
-window.AcessiCheckHighlighter = AcessiCheckHighlighter;
+window.A11yHighlighter = A11yHighlighter;
